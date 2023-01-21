@@ -9,6 +9,16 @@
 
 public class Primitivos {
     public static void main(String[] args) {
-        System.out.println("ola");
+        int idade = 19;
+        double salarioDouble = 1350;
+        float salarioFloat = 1350;
+        byte idadeByte = 12;
+        short idadeShort = 32434;
+        boolean verdadeiro = true;
+        boolean falso = false;
+        long numeroGrande = 10000L;
+        char caractere = 'I';
+        String nome = "Italo";
+        System.out.println("A idade é: " + idade);
     }
 }
