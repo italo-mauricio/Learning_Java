@@ -17,7 +17,7 @@ public class Primitivos {
         boolean verdadeiro = true;
         boolean falso = false;
         long numeroGrande = 10000L;
-        char caractere = 'I';
+        char caractere = 'I';  // 2 bytes
         String nome = "Italo";
         System.out.println("A idade é: " + idade);
     }
