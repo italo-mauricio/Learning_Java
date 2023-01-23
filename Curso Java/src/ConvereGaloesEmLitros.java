@@ -1,11 +1,22 @@
 public class ConvereGaloesEmLitros {
     public static void main(String[] args) {
-        double gallons;
-        double liters;
+        double gallons, litters;
+        int counter = 0;
 
-        gallons = 10;
+        for (gallons = 1; gallons <= 100; gallons++){
+            litters = gallons * 3.7854;
+            System.out.println(gallons + " gallons is " + litters + " litters.");
+            counter ++;
 
-        liters = gallons * 3.7854;
-        System.out.println(gallons + " gallons is " + liters + " liters.");
+            if (counter == 10) {
+                System.out.println();
+                counter = 0;
+            }
+        }
+
+
+
+
+
     }
 }
