@@ -13,10 +13,5 @@ public class ConvereGaloesEmLitros {
                 counter = 0;
             }
         }
-
-
-
-
-
     }
 }
