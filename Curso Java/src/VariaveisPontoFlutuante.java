@@ -8,4 +8,5 @@ public class VariaveisPontoFlutuante {
         System.out.println("Valor da idade: " + passagem02);
 
     }
+}
 
