@@ -1,6 +1,6 @@
 public class ImpostoFluxo {
     public static void main(String[] args) {
-        double salario = 5000;
+        double salario = 95000000;
         double novoSalario, porcento;
 
         if(salario < 1000){
