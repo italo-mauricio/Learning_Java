@@ -1,1 +1,1 @@
-# Repositório destinado ao aprendizado de java através do curso dev dojo no youtube
+# Repositório destinado ao aprendizado de java através do curso da loiane no youtube
