@@ -8,5 +8,8 @@ public class CurtoCircuito {
                 verdadeiro; // aqui ele já vai pular direto no inicio do falso
         System.out.println(resultado1);
         System.out.println(resultado2);
+
+        int resultado = 1 + 1 - 1 + 1 * 1 / 1;
+        System.out.println(resultado);
     }
 }
