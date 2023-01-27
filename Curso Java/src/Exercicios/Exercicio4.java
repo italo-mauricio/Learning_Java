@@ -8,7 +8,7 @@ public class Exercicio4 {
 
         System.out.print("Quantos metros você deseja converter para CM(centímetros): ");
         float metros = scan.nextFloat();
-        float convertido = metros / 100;
+        float convertido = metros * 100;
 
         System.out.println("O resultado da conversão de: " +metros+ " metros para CM é de: " + convertido);
     }
