@@ -1,3 +1,5 @@
+package Exercicios;
+
 import java.util.Scanner;
 
 
@@ -13,7 +15,7 @@ public class Exercicio11 {
         System.out.print("Digite o terceiro número: ");
         float num3 = scan.nextFloat();
 
-        double num4 = 3;
+        int num4 = 3;
         double resultado1 = (num1 * 2) + (num2 % 2);
         double resultado2 = (num1 * 3) + num3;
         double resultado3 = Math.pow(num3, num4);
