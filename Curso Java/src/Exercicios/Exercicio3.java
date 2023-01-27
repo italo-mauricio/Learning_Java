@@ -2,6 +2,9 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que peça 4 notas bimestrais e mostre a média
+ */
 public class Exercicio3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

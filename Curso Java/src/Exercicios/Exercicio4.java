@@ -2,6 +2,10 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que converta metros para centímetros.
+ */
+
 public class Exercicio4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

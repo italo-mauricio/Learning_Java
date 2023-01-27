@@ -2,6 +2,9 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que peça dois números e imprima a soma
+ */
 public class Exercicio2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

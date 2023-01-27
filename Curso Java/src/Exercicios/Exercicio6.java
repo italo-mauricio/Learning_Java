@@ -2,6 +2,9 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que calcule a área de um quadrado, em seguida mostre o dobro dessa área.
+ */
 public class Exercicio6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

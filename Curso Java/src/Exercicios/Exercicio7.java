@@ -2,6 +2,11 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que pergunte quanto você ganha por hora,
+ * e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no mês.
+ */
+
 public class Exercicio7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
