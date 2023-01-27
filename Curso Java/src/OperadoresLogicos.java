@@ -1,8 +1,10 @@
 public class OperadoresLogicos {
     public static void main(String[] args) {
-        int idade = 15;
-        float salario = 100f;
-
-        System.out.println(idade >= 18 || salario >= 1000);
+        int valor1 = 1;
+        int valor2 = 2;
+        boolean resultado1 = (valor1 == 1) && (valor2 != 2);
+        boolean resultado2 = (valor1 == 1) || (valor2 != 2);
+        System.out.println("Valor1 é 1 AND valor2 é 2 - resultado: " + resultado1);
+        System.out.println("Valor1 é 1 OR valor2 é 2 - resultado: " + resultado2);
     }
 }
