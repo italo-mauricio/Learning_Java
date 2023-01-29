@@ -1,31 +1,55 @@
 package Exercicios;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
-
 
 public class Exercicio11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        // Cálculos
-        System.out.print("Digite o primeiro número: ");
-        int num1 = scan.nextInt();
-        System.out.print("Digite o segundo número: ");
-        int num2 = scan.nextInt();
-        System.out.print("Digite o terceiro número: ");
-        float num3 = scan.nextFloat();
+        System.out.print("Digite sua altura: ");
+        float altura = scan.nextFloat();
+        System.out.print("Digite seu sexo [M/F]: ");
+        String sexo = scan.next();
+        System.out.print("Digite o seu peso: ");
+        int peso = scan.nextInt();
+        double resultado = calculadoraImc(peso, altura);
 
-        int num4 = 3;
-        double resultado1 = (num1 * 2) + (num2 % 2);
-        double resultado2 = (num1 * 3) + num3;
-        double resultado3 = Math.pow(num3, num4);
+        if (sexo.equals("M") && resultado < 18.5) {
+            System.out.println("Você é Homem\n");
+            System.out.println("Abaixo do peso ideal, seu imc é de : " + resultado);
+        } else if (sexo.equals("M") && resultado <= 24.9) {
+            System.out.println("Você é Homem\n");
+            System.out.println("Seu peso esta ideal, seu imc é de: " + resultado);
+        } else if (sexo.equals("M") && resultado <= 29.9) {
+            System.out.println("Você é Homem\n");
+            System.out.println("Seu peso esta um pouco acima da média, seu imc é de: " + resultado);
+        } else if (sexo.equals("M") && resultado <= 39.9) {
+            System.out.println("Você é Homem\n");
+            System.out.println("Seu peso esta bem acima da média, seu imc é de: " + resultado);
+        } else if (sexo.equals("M") && resultado > 40) {
+            System.out.println("Você é Homem\n");
+            System.out.println("Você está obeso, procure um médico, seu imc é de: " + resultado);
+        }
+        if (sexo.equals("F") && resultado < 18.5) {
+            System.out.println("Você é Mulher\n");
+            System.out.println("Abaixo do peso ideal, seu imc é de: " + resultado);
+        } else if (sexo.equals("F") && resultado <= 24.9) {
+            System.out.println("Você é Mulher\n");
+            System.out.println("Seu peso esta ideal, seu imc é de: " + resultado);
+        } else if (sexo.equals("F") && resultado <= 29.9) {
+            System.out.println("Você é Mulher\n");
+            System.out.println("Seu peso está um pouco acima da média, seu imc é de: " + resultado);
+        } else if (sexo.equals("F") && resultado <= 39.9) {
+            System.out.println("Você é Mulher\n");
+            System.out.println("Seu peso está bem acima da média, seu imc é de: " + resultado);
+        } else if (sexo.equals("F") && resultado > 40) {
+            System.out.println("Você é Mulher\n");
+            System.out.println("Você está obesa, procure um médico, seu imc é de: " + resultado);
+        }
 
-        // Resultados
-        System.out.println("O produto do dobro do primeiro com a metade do segundo é: " + resultado1);
-        System.out.println("A soma do triplo do primeiro com o terceiro é: " + resultado2);
-        System.out.println("O terceiro elevado ao cubo é: " + resultado3);
-
-
-
+    }
+    static float calculadoraImc(float peso, float altura){
+        return peso/(altura * altura);
     }
 }
