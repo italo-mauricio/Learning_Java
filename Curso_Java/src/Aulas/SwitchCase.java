@@ -6,7 +6,7 @@ public class SwitchCase {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Escolha de (1-7) para verificar o dia da semana: ");
+        System.out.print("Escolha de as opções de (1-7) para verificar o dia da semana: ");
         int diaSemana = scan.nextInt();
 
         switch (diaSemana){
