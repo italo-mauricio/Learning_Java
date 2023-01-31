@@ -17,7 +17,7 @@ public class Exercicio14 {
 
         if (num1 > num2){
             System.out.println("O primeiro número é MAIOR que o segundo número são eles: " + num1 + " e " + num2);
-        }else if (num1 < num2) {
+        }else {
             System.out.println("O primeiro número é MENOR que o segundo número, são eles: " + num1 + " e " + num2);
         }
     }
