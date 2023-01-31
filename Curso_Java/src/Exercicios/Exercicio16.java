@@ -13,11 +13,11 @@ public class Exercicio16 {
         System.out.print("Digite seu sexo [M/F]: ");
         String sexo = scan.next();
 
-        if (sexo.equals("M")){
+        if (sexo.equalsIgnoreCase("m")){
             System.out.println("Sexo escolhido foi Masculino!");
-        }else if (sexo.equals("F")){
+        }else if (sexo.equalsIgnoreCase("f")){
             System.out.println("Sexo escolhido foi Feminino");
-        }else if (sexo.equals("O")){
+        }else if (sexo.equalsIgnoreCase("o")){
             System.out.println("Sexo escolhido foi Outros");
         }else{
             System.out.println("Sexo inválido");
