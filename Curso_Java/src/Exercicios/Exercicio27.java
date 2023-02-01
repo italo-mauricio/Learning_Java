@@ -2,6 +2,9 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ *  Faça um programa que determine se um ano é bissexto ou nao
+ */
 public class Exercicio27 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
