@@ -2,11 +2,14 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * Faça um programa que peça o salario de um funcionário e faça reajustes
+ */
 public class Exercicio22 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite o seu salário: ");
+        System.out.print("Digite o seu salário: ");
         double salario = scan.nextDouble();
         double vinteCent = (20.0/100.0) * salario;
         double quinzeCent = (15.0/100.0) * salario;
@@ -23,9 +26,11 @@ public class Exercicio22 {
             System.out.println("Seu salário com um aumento de 15% fica: " + (salario += quinzeCent) + " R$");
         }else if (salario <= 1500){
             System.out.println("Seu salário antes do reajuste: " + salario + " R$");
+            System.out.println("Seu salário aumentou: " + dezCent + " R$");
             System.out.println("Seu salário com um aumento de 10% fica: " + (salario += dezCent) + " R$");
         }else {
             System.out.println("Seu salário antes do reajuste: " + salario + " R$");
+            System.out.println("Seu salário aumentou: " + cincoCent + " R$");
             System.out.println("Seu salário com um aumento de 5% fica: " + (salario += cincoCent) + " R$");
         }
     }
