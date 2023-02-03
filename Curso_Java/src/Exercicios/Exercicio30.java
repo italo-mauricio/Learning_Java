@@ -49,7 +49,7 @@ public class Exercicio30 {
             System.out.println("Você é cúmplice");
         }else if(cont == 5){
             System.out.println("Você está preso, você é o culpado!");
-        }else if (cont == 0){
+        }else {
             System.out.println("Okay, está liberado!");
         }
     }
