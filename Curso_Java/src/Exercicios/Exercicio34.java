@@ -2,6 +2,9 @@ package Exercicios;
 
 import java.util.Scanner;
 
+/***
+ * faça um código que valida informações básicas de cadastro
+ */
 public class Exercicio34 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -55,7 +58,7 @@ public class Exercicio34 {
         infoValida =  false;
 
         do {
-            System.out.println("Digite o seu sexo: ");
+            System.out.println("Digite o seu sexo [M/F/O]: ");
             sexo = scan.next();
 
             if (sexo.equalsIgnoreCase("f") ||
@@ -63,10 +66,40 @@ public class Exercicio34 {
                         sexo.equalsIgnoreCase("o")){
                 infoValida = true;
                 System.out.println("Sexo válido");
+                if (sexo.equals("f")) {
+                    System.out.println("Feminino");
+                    sexo = "feminino";
+                }else if (sexo.equals("m")){
+                    System.out.println("Masculino");
+                    sexo = "Masculino";
+                }
             }else{
                 System.out.println("Sexo inválido");
             }
         }while (!infoValida);
 
+        infoValida = false;
+
+        do {
+            System.out.println("Digite seu estado civil [S/C/V]: ");
+            estadoCivil = scan.next();
+
+            if (estadoCivil.equalsIgnoreCase("s") ||
+                estadoCivil.equalsIgnoreCase("c") ||
+                estadoCivil.equalsIgnoreCase("v")){
+                infoValida = true;
+                System.out.println("Estado civil válido!");
+            }else{
+                System.out.println("Estado civil inválido!");
+            }
+        }while (!infoValida);
+
+        System.out.println("As informações digitadas foram!");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Gênero: " + sexo);
+        System.out.println("Estado civil: " + estadoCivil);
+        System.out.println("Salario: " + salario);
     }
+
 }
