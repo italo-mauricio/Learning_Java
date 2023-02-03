@@ -25,7 +25,7 @@ public class Exercicio33 {
                 infoValida = true;
                 System.out.println("Senha válida!");
                 System.out.println("Entrou!");
-                break;
+
             }
 
         }while(!infoValida);
