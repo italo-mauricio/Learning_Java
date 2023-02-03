@@ -9,12 +9,15 @@ public class Exercicio33 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        // dica: para melhorar um pouco a perfomance de memória no java, é uma boa prática declarar as variáveis fora do escopo de código.
         boolean infoValida = false;
+        String nome;
+        String senha;
         do {
             System.out.print("Digite o seu nome: ");
-            String nome = scan.next();
+            nome = scan.next();
             System.out.print("Digite uma senha: ");
-            String senha = scan.next();
+            senha = scan.next();
 
             if (nome.equalsIgnoreCase(senha)){
                 System.out.println("Senha igual ao usuario, digite novamente");
