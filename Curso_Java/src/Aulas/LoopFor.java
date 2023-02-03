@@ -10,8 +10,15 @@ public class LoopFor {
             System.out.println("I tem o valor de: " + i);
         }
         // loop de repetição com mais de uma variável
-        for (int i = 0, j = 10; i < j; i++, j-- ){
-            System.out.println("I tem o valor de: " + i + " J tem o valor de: " + j);
+        // isso
+        int count = 0;
+        for ( ; count < 10 ;){
+            System.out.println("Valor de count: " + count);
+            count += 2;
+        }
+        // é a mesma coisa que isso
+        for (int cont = 0; cont < 10; cont += 2){
+            System.out.println("Valor de count: " + cont);
         }
     }
 }
