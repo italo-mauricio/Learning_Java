@@ -17,7 +17,7 @@ public class Exercicio34 {
         boolean infoValida = false;
 
         do{
-            System.out.println("Digite o seu nome");
+            System.out.print("Digite o seu nome");
             nome = scan.next();
             if (nome.length() >= 3){
                 infoValida = true;
@@ -30,7 +30,7 @@ public class Exercicio34 {
         infoValida = false;
 
         do {
-            System.out.println("Digite sua idade: ");
+            System.out.print("Digite sua idade: ");
             idade = scan.nextInt();
 
             if(idade >= 0 && idade <= 120){
@@ -44,7 +44,7 @@ public class Exercicio34 {
         infoValida = false;
 
         do {
-            System.out.println("Digite seu salario: ");
+            System.out.print("Digite seu salario: ");
             salario = scan.nextDouble();
 
             if (salario > 0){
@@ -58,7 +58,7 @@ public class Exercicio34 {
         infoValida =  false;
 
         do {
-            System.out.println("Digite o seu sexo [M/F/O]: ");
+            System.out.print("Digite o seu sexo [M/F/O]: ");
             sexo = scan.next();
 
             if (sexo.equalsIgnoreCase("f") ||
@@ -72,6 +72,11 @@ public class Exercicio34 {
                 }else if (sexo.equals("m")){
                     System.out.println("Masculino");
                     sexo = "Masculino";
+                }else if (sexo.equals("o")){
+                    System.out.println("Você escolheu outros");
+                    System.out.print("Digite seu gênero: ");
+                    String sexoNovo = scan.next();
+                    sexo = sexoNovo;
                 }
             }else{
                 System.out.println("Sexo inválido");
@@ -81,7 +86,7 @@ public class Exercicio34 {
         infoValida = false;
 
         do {
-            System.out.println("Digite seu estado civil [S/C/V]: ");
+            System.out.print("Digite seu estado civil [S/C/V]: ");
             estadoCivil = scan.next();
 
             if (estadoCivil.equalsIgnoreCase("s") ||
@@ -89,6 +94,16 @@ public class Exercicio34 {
                 estadoCivil.equalsIgnoreCase("v")){
                 infoValida = true;
                 System.out.println("Estado civil válido!");
+                if (estadoCivil.equals("s")){
+                    System.out.println("Solteiro");
+                    estadoCivil = "Solteiro(a)";
+                }else if(estadoCivil.equals("c")){
+                    System.out.println("Casado");
+                    estadoCivil = "Casado(a)";
+                }else if (estadoCivil.equals("v")){
+                    System.out.println("Viuvo(a)");
+                    estadoCivil = "Viuvo(a)";
+                }
             }else{
                 System.out.println("Estado civil inválido!");
             }
@@ -99,7 +114,8 @@ public class Exercicio34 {
         System.out.println("Idade: " + idade);
         System.out.println("Gênero: " + sexo);
         System.out.println("Estado civil: " + estadoCivil);
-        System.out.println("Salario: " + salario);
+        System.out.println("Salario: " + salario + " R$");
+        System.out.println("CADASTRO EFETIVADO!");
     }
 
 }
