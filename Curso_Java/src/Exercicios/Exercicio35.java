@@ -16,6 +16,7 @@ public class Exercicio35 {
             cont ++;
         }
 
+        System.out.println("Resultados!");
         System.out.println("População A: " + popA);
         System.out.println("População B: " + popB);
         System.out.println("Quantidade de anos: " + cont);
