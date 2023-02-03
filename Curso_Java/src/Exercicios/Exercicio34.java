@@ -109,7 +109,7 @@ public class Exercicio34 {
             }
         }while (!infoValida);
 
-        System.out.println("As informações digitadas foram!");
+        System.out.println("As informações digitadas foram!!");
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
         System.out.println("Gênero: " + sexo);
