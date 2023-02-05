@@ -17,6 +17,14 @@ public class Exercicio46 {
         int segundoNum = 1;
         int aux;
 
+        /*88
+            Explicação:
+
+            1, 1, 2, 3, 5 ...
+            primeiro = 1
+            segundo = 2
+            proximo = 3
+         */
         System.out.println(primeiroNum);
         System.out.println(segundoNum);
 
