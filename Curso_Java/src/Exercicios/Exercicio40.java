@@ -1,4 +1,4 @@
-package Exercicios;
+package Curso_Java.src.Exercicios;
 
 /***
  * faça um programa que apresente só os números ímpares

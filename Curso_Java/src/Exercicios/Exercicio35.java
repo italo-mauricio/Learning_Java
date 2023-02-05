@@ -1,4 +1,4 @@
-package Exercicios;
+package Curso_Java.src.Exercicios;
 
 /***
  * faça um programa que calcule quanto tempo a população A vai ultrapassar a população B em uma margem especifica de crescimento

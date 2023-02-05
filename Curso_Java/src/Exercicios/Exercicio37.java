@@ -1,4 +1,4 @@
-package Exercicios;
+package Curso_Java.src.Exercicios;
 
 /***
  * faça um programa que imprima os numeros de 1 a 20 tanto na vertical como na horizontal

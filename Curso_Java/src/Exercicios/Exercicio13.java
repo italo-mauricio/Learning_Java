@@ -1,5 +1,4 @@
-package Exercicios;
-
+package Curso_Java.src.Exercicios;
 import java.util.Scanner;
 
 public class Exercicio13 {
