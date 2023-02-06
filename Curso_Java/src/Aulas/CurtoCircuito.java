@@ -1,4 +1,4 @@
-package Aulas;
+package Curso_Java.src.Aulas;
 
 public class CurtoCircuito {
     public static void main(String[] args) {
