@@ -13,9 +13,9 @@ public class CondicionalSaidaBreak {
 
         for (int i = num; i <= maximo; i++){
             if (i % 7 == 0){
-                System.out.println("O valor de i é: " + i);
-                break;
+                continue;   // ele vai pular toda vez que for um múltiplo de 7
             }
+            System.out.println("O valor de i: " + i);
         }
     }
 }

@@ -2,7 +2,7 @@ package Curso_Java.src.Aulas;
 
 
 /***
- * Mostrando como é a verificação de break com rótulos
+ * Go to não é usado na programação
  */
 public class BreakComRotulos {
     public static void main(String[] args) {
