@@ -13,7 +13,7 @@ public class Exercicio12 {
         int[] vetorA = new int[10];
 
         for (int i=0; i < vetorA.length; i++){
-            System.out.println("Digite os valores da posição");
+            System.out.println("Digite os valores da posição: " + i);
             vetorA[i] = scan.nextInt();
         }
         int qtdPares = 0;
