@@ -13,7 +13,7 @@ public class Exercicio17 {
         int[] vetorA =  new int[10];
 
         for (int i = 0; i < vetorA.length; i++){
-            System.out.print("Digite o valor da posição: ");
+            System.out.println("Digite o valor da posição: " + i);
             vetorA[i] = scan.nextInt();
         }
 
