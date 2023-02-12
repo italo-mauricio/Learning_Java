@@ -2,6 +2,10 @@ package Curso_Java.src.Exercicios.Arrays;
 
 import java.util.Scanner;
 
+/***
+ * Criar um vetor A de 10 elementos inteiros. Desenvolver um programa que defina a soma.
+ */
+
 public class Exercicio17 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
