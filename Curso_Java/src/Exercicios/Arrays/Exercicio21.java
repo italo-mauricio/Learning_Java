@@ -18,8 +18,11 @@ public class Exercicio21 {
         double[] nota1 = new double[5];
         double[] nota2 = new double[nota1.length];
         double[] result = new double[nota1.length];
+        String[] aluno = new String[nota1.length];
 
         for (int i = 0; i < nota1.length; i++){
+            System.out.print("Digite o nome do aluno: ");
+            aluno[i] = scan.next();
             System.out.print("Digite a PRIMEIRA nota do aluno: ");
             nota1[i] = scan.nextDouble();
             System.out.print("Digite a SEGUNDA nota do aluno: ");
@@ -27,23 +30,31 @@ public class Exercicio21 {
 
             result[i] = (nota1[i] + nota2[i]) / 2;
         }
-
-        System.out.println("Primeiras notas: ");
+        String aprovado = " ";
+        String recuperacao = " ";
+        String reprovadp = " ";
+        System.out.println("Primeira nota: ");
         for (int i = 0; i < nota1.length; i++){
             System.out.print(" / "+ nota1[i] + " ");
         }
-        System.out.println("\nSegundas notas: ");
+        System.out.println("\nSegunda nota: ");
         for (int i = 0; i < nota2.length; i++){
             System.out.print(" / "+ nota2[i] + " ");
         }
         System.out.println("\nResultados: ");
         for (int i = 0; i < result.length; i++){
             if (result[i] >= 7){
-                System.out.print(result[i] + " - Aprovado\n");
+                aprovado = " - Aprovado";
+                System.out.println("\nAluno: " + aluno[i] + "\nNota: " + result[i] + "\nSituação: " + aprovado);
+            }else if (result[i] >= 5) {
+                recuperacao = " - Recuperação";
+                System.out.println("\nAluno: " + aluno[i] + "\nNota: " + result[i] + "\nSituação: " + recuperacao);
+            }else if (result[i] < 5){
+                reprovadp = " - Reprovado";
+                System.out.println("\nAluno: " + aluno[i] + "\nNota: " + result[i] + "\nSituação: " + reprovadp);
             }else {
-                System.out.print(result[i] + " - Reprovado\n");
+                System.out.println("Média inválida!");
             }
         }
-
     }
 }
