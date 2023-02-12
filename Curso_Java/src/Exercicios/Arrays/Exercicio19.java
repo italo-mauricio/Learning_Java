@@ -12,29 +12,31 @@ public class Exercicio19 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int[] vetorA = new int[5];
-        String[] vetorB = new String[vetorA.length];
+        int[] idades = new int[5];
+        String[] vetorB = new String[idades.length];
 
-        for(int i = 0; i < vetorA.length; i++){
+        for(int i = 0; i < idades.length; i++){
             System.out.println("Digite sua idade: " + (i+1));
-            vetorA[i] = scan.nextInt();
+            idades[i] = scan.nextInt();
             System.out.println("Digite o nome");
             vetorB[i] = scan.next();
         }
         int qtd = 0;
-        for (int i = 0; i < vetorA.length; i++){
-            if (vetorA[i] > 35){
+        for (int i = 0; i < idades.length; i++){
+            if (idades[i] > 35){
                 qtd++;
             }
         }
+
+
         System.out.println("Vetor idade: ");
-        for (int i=0; i < vetorA.length; i++){
-            System.out.print(" / " + vetorA[i] + " ");
+        for (int i=0; i < idades.length; i++){
+            System.out.print(" / " + idades[i] + " ");
 
         }
         System.out.println();
         System.out.println("Nomes em ordem de representação: ");
-        for (int i=0; i < vetorA.length; i++){
+        for (int i=0; i < idades.length; i++){
             System.out.print(" / " + vetorB[i] + " ");
 
         }
@@ -43,8 +45,8 @@ public class Exercicio19 {
         System.out.println();
         System.out.println("As pessoas com mais de 35 anos são: ");
         System.out.println();
-        for (int i=0; i < vetorA.length; i++){
-            if (vetorA[i] > 35){
+        for (int i=0; i < idades.length; i++){
+            if (idades[i] > 35){
                 System.out.print(" / " + vetorB[i] + " ");
             }
         }
