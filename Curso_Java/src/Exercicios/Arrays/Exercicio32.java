@@ -15,7 +15,6 @@ public class Exercicio32 {
         int[] vetorB = new int[vetorA.length]; // pares e ímpares
 
         int posB = 0;
-        int posC = 0;
 
         for (int i = 0; i < vetorA.length; i++){
             System.out.println("Digite o valor da posição: " + i);
@@ -24,8 +23,24 @@ public class Exercicio32 {
 
         for (int i = 0; i < vetorA.length; i++){
             if (vetorA[i] % 2 == 0){
-
+                vetorB[posB] = vetorA[i];
+                posB++;
             }
+        }
+        for (int i = 0; i < vetorA.length; i++){
+            if (vetorA[i] % 2 != 0){
+                vetorB[posB] = vetorA[i];
+                posB++;
+            }
+        }
+
+        System.out.println("\nVetor A: ");
+        for (int i = 0; i < vetorA.length; i++){
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println("\nVetor B: ");
+        for (int i = 0; i < posB; i++){
+            System.out.print(vetorB[i] + " ");
         }
 
 
