@@ -21,7 +21,7 @@ public class Exercicio35 {
             System.out.println("Analizando o número: " + vetorA[i]);
 
             for (int j = 2; j < vetorA[i]; j++){
-                if (j %2 ==0){
+                if (j % 2 ==0){
                     System.out.println(j + " é par");
                 }else{
                     System.out.println(j + " é ímpar");
