@@ -16,8 +16,9 @@ public class Exercicio1 {
         for (int i = 0; i < matrizTridimensional.length; i++){
             for (int j = 0; j < matrizTridimensional[i].length; j++){
                 for (int k = 0; k < matrizTridimensional[i][j].length; k++){
+                    System.out.println("i = " + i + " - j = " + " - k = " + k);
                     matrizTridimensional[i][j][k] = i + j + k;
-                    System.out.print(" | " + matrizTridimensional[i][j][k] + " | " );
+
                 }
             }
         }
