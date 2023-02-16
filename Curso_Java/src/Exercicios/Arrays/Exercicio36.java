@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Criar um vetor A com 10 elementos inteiros. Escreva um programa que imprima cada elemento do vetor A e a relação de todos
  * divisores do respectivo elemento.
  */
-public class Exrcicio36 {
+public class Exercicio36 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] vetorA = new int[5];
