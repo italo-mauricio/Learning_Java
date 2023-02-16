@@ -21,10 +21,10 @@ public class Matrizes {
         notasAlunos[2][3] = 8;
 
         for (int i = 0; i < notasAlunos.length; i++){
-             System.out.println(notasAlunos[i] + " ");
-            for(int j = 0; j < notasAlunos.length; j++){
-                System.out.println(notasAlunos[j] + " ");
+            for(int j = 0; j < notasAlunos[i].length; j++){
+                System.out.print(" | " + notasAlunos[i][j] + " | ");
             }
+            System.out.println();
         }
 
     }
