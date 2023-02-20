@@ -32,7 +32,7 @@ public class Exercicio4 {
 
         for (int i =0; i < numAleatorio[linha5].length; i++){
             if (numAleatorio[linha5][i] > maiorLinha5){
-                maiorLinha5 = numAleatorio[5][i];
+                maiorLinha5 = numAleatorio[linha5][i];
             }
             if (numAleatorio[linha5][i] < menorLinha5){
                 menorLinha5 = numAleatorio[linha5][i];
