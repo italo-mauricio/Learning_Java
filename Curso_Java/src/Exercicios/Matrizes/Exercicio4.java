@@ -28,7 +28,7 @@ public class Exercicio4 {
 
         int maiorLinha5 = Integer.MIN_VALUE;
         int menorLinha5 = Integer.MAX_VALUE;
-        int linha5 = 0;
+        int linha5 = 5;
 
         for (int i =0; i < numAleatorio[linha5].length; i++){
             if (numAleatorio[linha5][i] > maiorLinha5){
