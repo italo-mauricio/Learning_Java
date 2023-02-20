@@ -34,7 +34,12 @@ public class Exercicio3 {
                 }
             }
         }
-
+        for (int i =0; i < numAleatorio.length; i++) {
+            for (int j = 0; j < numAleatorio[i].length; j++) {
+                System.out.print(numAleatorio[i][j] + " ");
+            }
+            System.out.println();
+        }
         System.out.println("Maior valor: " + maior);
         System.out.println("Linha: " + linha);
         System.out.println("Coluna: " + coluna);
