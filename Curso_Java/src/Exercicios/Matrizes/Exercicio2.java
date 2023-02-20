@@ -24,7 +24,7 @@ public class Exercicio2 {
             System.out.println("Quantos filhos você tem: ");
             int qtdFilhos = scan.nextInt();
 
-            nomesFilhos[i] = new String[qtdFilhos];
+            nomesFilhos[i] = new String[qtdFilhos];  // Matriz no java é um vetor de vetores
 
             for (int j = 0; j < nomesFilhos[i].length; j++){
                 System.out.println("Digite o nome do filho: " + (j+1));
