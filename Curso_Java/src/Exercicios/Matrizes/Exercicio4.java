@@ -29,7 +29,6 @@ public class Exercicio4 {
         int maiorLinha5 = Integer.MIN_VALUE;
         int menorLinha5 = Integer.MAX_VALUE;
         int linha5 = 0;
-        int coluna = 0;
 
         for (int i =0; i < numAleatorio[linha5].length; i++){
             if (numAleatorio[linha5][i] > maiorLinha5){
@@ -41,6 +40,21 @@ public class Exercicio4 {
         }
         System.out.println("Maior valor da linha 5: " + maiorLinha5);
         System.out.println("Menor valor da linha 5: " + menorLinha5);
+
+        int maiorColuna7 = Integer.MIN_VALUE;
+        int menorColuna7 = Integer.MAX_VALUE;
+        int coluna7 = 7;
+
+        for (int i=0; i<numAleatorio.length; i++){
+            if (numAleatorio[i][coluna7] > maiorColuna7){
+                maiorColuna7 = numAleatorio[i][coluna7];
+            }
+            if (numAleatorio[i][coluna7] < menorColuna7){
+                menorColuna7 = numAleatorio[i][coluna7];
+            }
+        }
+        System.out.println("Maior valor da coluna 7: " + maiorColuna7);
+        System.out.println("Menor valor da coluna 7: " + menorColuna7);
 
 
     }
