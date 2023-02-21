@@ -30,10 +30,12 @@ public class Exercicio8 {
 
                 System.out.println("Vez do jogador 1. Escolha linha e coluna (1 - 3 )");
                 sinal = 'X';
-            } else {
+            } else {  // jogador 2
                 System.out.println("Vez do jogador 2. Escolha linha e coluna (1 - 3 )");
                 sinal = 'O';
             }
+
+            // verificar se as linhas digitadas são válidas
 
             boolean linhaValida = false;
 
@@ -46,6 +48,8 @@ public class Exercicio8 {
                     System.out.println("Linha inválida, tente novamente!");
                 }
             }
+
+            // verificar se as colunas difitadas são válidsa
 
             boolean colunaValida = false;
 
