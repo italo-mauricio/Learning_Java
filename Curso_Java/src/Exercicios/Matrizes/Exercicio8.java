@@ -81,12 +81,28 @@ public class Exercicio8 {
                     (jogoVelha[1][0] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[1][2] == 'X' ) ||  // linha 2
                     (jogoVelha[2][0] == 'X' && jogoVelha[2][1] == 'X' && jogoVelha[2][2] == 'X' ) ||  // linha 3
                     (jogoVelha[0][0] == 'X' && jogoVelha[1][0] == 'X' && jogoVelha[2][0] == 'X' ) ||  // coluna 1
-                    (jogoVelha[0][1] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[2][1] == 'X' ) ||
-                    (jogoVelha[0][2] == 'X' && jogoVelha[1][2] == 'X' && jogoVelha[2][2] == 'X' )){
+                    (jogoVelha[0][1] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[2][1] == 'X' ) ||  // coluna 2
+                    (jogoVelha[0][2] == 'X' && jogoVelha[1][2] == 'X' && jogoVelha[2][2] == 'X' ) ||  // coluna 3
+                    (jogoVelha[0][0] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[2][2] == 'X' )){   //diagonal
 
+                ganhou = true;
+                System.out.println("Parabéns jogador 1 ganhou!!!");
+
+            }else if ((jogoVelha[0][0] == 'O' && jogoVelha[0][1] == 'O' && jogoVelha[0][2] == 'O') ||    // linha 1
+                    (jogoVelha[1][0] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[1][2] == 'O' ) ||  // linha 2
+                    (jogoVelha[2][0] == 'O' && jogoVelha[2][1] == 'O' && jogoVelha[2][2] == 'O' ) ||  // linha 3
+                    (jogoVelha[0][0] == 'O' && jogoVelha[1][0] == 'O' && jogoVelha[2][0] == 'O' ) ||  // coluna 1
+                    (jogoVelha[0][1] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[2][1] == 'O' ) ||  // coluna 2
+                    (jogoVelha[0][2] == 'O' && jogoVelha[1][2] == 'O' && jogoVelha[2][2] == 'O' ) ||  // coluna 3
+                    (jogoVelha[0][0] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[2][2] == 'O' )){   //diagonal
+
+                ganhou = true;
+                System.out.println("Parabéns jogador 2 ganhou!!!");
+
+            }else if (jogada > 9){
+                ganhou = true;
+                System.out.println("Ninguém ganhou a partida!");
             }
-
-
         }
     }
 }
