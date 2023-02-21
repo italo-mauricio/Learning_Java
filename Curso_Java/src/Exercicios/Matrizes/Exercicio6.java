@@ -1,6 +1,8 @@
 package Curso_Java.src.Exercicios.Matrizes;
 
 
+import java.util.Scanner;
+
 /***
  * Faça um programa para armazenar em uma matriz os compromissos de uma agenda pessoal.
  * Cada dia do mês deve conhter 24 horas, onde para cada uma destas 24 horas podemos associar
@@ -12,6 +14,29 @@ package Curso_Java.src.Exercicios.Matrizes;
 
 public class Exercicio6 {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
+        String [][] compromissos = new String[31][24];
+
+        Boolean sair = false;
+        int opcao;
+
+        while(!sair){
+            System.out.println("Digite 1 para adicionar compromisso");
+            System.out.println("Digite 2 para verificar compromisso");
+            System.out.println("Digite 0 para sair");
+            opcao = scan.nextInt();
+
+            if (opcao == 1){
+
+            }else if (opcao == 2){
+
+            }else if (opcao == 0){
+
+            }else {
+                System.out.println("Opção inválida!");
+            }
+
+        }
     }
 }
