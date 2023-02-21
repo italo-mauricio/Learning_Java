@@ -20,6 +20,8 @@ public class Exercicio6 {
 
         Boolean sair = false;
         int opcao;
+        boolean diaValido = false;
+        int dia = 0;
 
         while(!sair){
             System.out.println("Digite 1 para adicionar compromisso");
@@ -28,6 +30,16 @@ public class Exercicio6 {
             opcao = scan.nextInt();
 
             if (opcao == 1){
+                while (!diaValido){
+                    System.out.println("Digite o dia do mês: ");
+                    dia = scan.nextInt();
+                    if (dia > 0 && dia <= 31){
+                        diaValido = true;
+                    }else{
+                        System.out.println("Dia inválido, digite novamente!");
+                    }
+                }
+
 
             }else if (opcao == 2){
 
