@@ -39,10 +39,44 @@ public class Exercicio8 {
 
             while(!linhaValida){
                 System.out.println("Digite a linha (1 / 2 / 3) ");
-
-
+                linha = scan.nextInt();
+                if (linha >= 1 && linha <= 3){
+                    linhaValida = true;
+                }else{
+                    System.out.println("Linha inválida, tente novamente!");
+                }
             }
 
+            boolean colunaValida = false;
+
+            while(!colunaValida){
+                System.out.println("Digite a coluna (1 / 2 / 3) ");
+                coluna = scan.nextInt();
+                if (coluna >= 1 && coluna <= 3){
+                    colunaValida = true;
+                }else{
+                    System.out.println("Coluna inválida, tente novamente!");
+                }
+            }
+            linha--;
+            coluna--;
+            if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O'){
+                System.out.println("Posição já usada, tente novamente");
+            }else{
+                jogoVelha[linha][coluna] = sinal;
+                jogada++;
+            }
+
+            // imrpimir tabuleiro
+
+            for (int i = 0; i < jogoVelha.length; i++){
+                for (int j = 0; j < jogoVelha[i].length; j++){
+                    System.out.print(jogoVelha[i][j] + " | ");
+                }
+                System.out.println();
+            }
+
+            //verificar quem ganhou
 
 
         }
