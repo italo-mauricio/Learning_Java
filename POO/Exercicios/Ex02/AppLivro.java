@@ -10,10 +10,12 @@ public class AppLivro {
         livro.isbn = "2312312";
         livro.qtdPaginas = 500;
 
+
         System.out.println("Nome do livro: " + livro.nomeLivro);
         System.out.println("Autor: " + livro.autor);
         System.out.println("Ano de lançamento: " + livro.anoLancamento);
         System.out.println("ISBN: " + livro.isbn);
         System.out.println("Quantidade de páginas: " + livro.qtdPaginas);
+
     }
 }
