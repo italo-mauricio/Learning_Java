@@ -1,4 +1,4 @@
-package POO.Exercicios.Exercicio1;
+package POO.Exercicios.Ex01;
 
 public class Lampada {
     String modelo;

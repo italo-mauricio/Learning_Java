@@ -1,4 +1,4 @@
-package POO.Exercicios.Exercicio1;
+package POO.Exercicios.Ex01;
 
 public class AppLampada {
     public static void main(String[] args) {
