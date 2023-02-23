@@ -1,6 +1,6 @@
-package POO.Aulas;
+package POO.Aulas.Carro;
 
-public class Carro {
+public class PrincipalCarro {
     String marca;
     String modelo;
     int numPassageiros;
