@@ -14,4 +14,9 @@ public class PrincipalCarro {
     double obterAutonomia(){
         return capCombustivel * consumoCombustivel;
     }
+
+    double calcularCombustivel (double km){
+        double qtdCombustivel = km / consumoCombustivel;
+        return qtdCombustivel;
+    }
 }

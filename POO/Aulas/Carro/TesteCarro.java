@@ -11,6 +11,7 @@ public class TesteCarro {
         van.capCombustivel = 100;
         van.consumoCombustivel = 0.2;
         double autonomia = van.obterAutonomia();
+        double qtdCombustivel10 = van.calcularCombustivel(10);
 
 
         System.out.println(van.marca);
@@ -19,6 +20,7 @@ public class TesteCarro {
         System.out.println(van.capCombustivel);
         System.out.println(van.consumoCombustivel);
         System.out.println("Autonomia da van: " + autonomia + " km");
+        System.out.println("Para 10 km pecorridos a Van consome: " + qtdCombustivel10 + " Litros");
 
 
         PrincipalCarro fusca = new PrincipalCarro();
