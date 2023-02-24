@@ -8,16 +8,12 @@ package POO.Exercicios.Ex01;
 public class Exercicio1 {
     public static void main(String[] args) {
         Lampada lampada = new Lampada();
-
         lampada.ligar();
-        String estado = String.valueOf(lampada.ligado);
+        lampada.mostrarEstado();
+        lampada.desligar();
+        lampada.mudarEstado();
+        lampada.mostrarEstado();
 
-        if(lampada.ligado){
-            estado = "Ligado";
-        }else{
-            estado = "Desligado";
-        }
 
-        System.out.println("A lâmpada está " + estado);
     }
 }
