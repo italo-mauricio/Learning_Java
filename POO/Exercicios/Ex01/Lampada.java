@@ -18,4 +18,5 @@ public class Lampada {
     void desligar(){
        ligado = false;
     }
+
 }
