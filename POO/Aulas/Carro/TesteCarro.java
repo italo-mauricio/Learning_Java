@@ -10,11 +10,13 @@ public class TesteCarro {
         van.capCombustivel = 100;
         van.consumoCombustivel = 0.2;
 
+
         System.out.println(van.marca);
         System.out.println(van.modelo);
         System.out.println(van.numPassageiros);
         System.out.println(van.capCombustivel);
         System.out.println(van.consumoCombustivel);
+
 
         PrincipalCarro fusca = new PrincipalCarro();
         fusca.marca = "Volkswagen";
@@ -28,6 +30,7 @@ public class TesteCarro {
         System.out.println(fusca.numPassageiros);
         System.out.println(fusca.capCombustivel);
         System.out.println(fusca.consumoCombustivel);
+
 
 
     }
