@@ -4,11 +4,13 @@ public class TesteCarro {
     public static void main(String[] args) {
 
         PrincipalCarro van = new PrincipalCarro();
+
         van.marca = "Fiat";
         van.modelo = "Ducato";
         van.numPassageiros = 10;
         van.capCombustivel = 100;
         van.consumoCombustivel = 0.2;
+        double autonomia = van.obterAutonomia();
 
 
         System.out.println(van.marca);
@@ -16,6 +18,7 @@ public class TesteCarro {
         System.out.println(van.numPassageiros);
         System.out.println(van.capCombustivel);
         System.out.println(van.consumoCombustivel);
+        System.out.println("Autonomia da van: " + autonomia + " km");
 
 
         PrincipalCarro fusca = new PrincipalCarro();
