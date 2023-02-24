@@ -29,9 +29,9 @@ public class Lampada {
 
     void mudarEstado(){
         if(ligado){
-            ligar();
-        }else{
             desligar();
+        }else{
+            ligar();
         }
     }
 }

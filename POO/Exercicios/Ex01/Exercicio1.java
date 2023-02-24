@@ -11,6 +11,7 @@ public class Exercicio1 {
         lampada.ligar();
         lampada.mostrarEstado();
         lampada.desligar();
+        lampada.mostrarEstado();
         lampada.mudarEstado();
         lampada.mostrarEstado();
     }
