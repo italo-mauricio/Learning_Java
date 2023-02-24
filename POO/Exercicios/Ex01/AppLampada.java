@@ -1,5 +1,6 @@
 package POO.Exercicios.Ex01;
 
+
 public class AppLampada {
     public static void main(String[] args) {
         Lampada lampada = new Lampada();
@@ -10,11 +11,9 @@ public class AppLampada {
         lampada.cor = "Amarelo";
         lampada.corLuz = "Amarela";
         lampada.tipoAbajur = true;
-
         lampada.tipos = new String[5];   // precisamos instanciar o array para poder utilizar
         lampada.tipos[0] = "Abajur";
         lampada.tipos[1] = "Lampeões";
-
         System.out.println(lampada.tipos[0]);
     }
 }
