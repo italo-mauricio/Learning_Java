@@ -5,12 +5,21 @@ import java.util.Scanner;
 
 public class AppConta {
 
+
+    private static String init(){
+        String logo = "Bem vindos ao Banco Digital!";
+        System.out.println(logo);
+        return logo;
+    }
     public static String senhaNova() {
+
         Scanner scan = new Scanner(System.in);
         String senhaNova;
-        System.out.println("Crie sua senha: ");
+        System.out.print("Crie uma senha [números ou letras]: ");
         senhaNova = scan.next();
+        System.out.println("Senha cadastrada com sucesso!");
         return senhaNova;
+
     }
 
     public static void main(String[] args) {
@@ -20,7 +29,7 @@ public class AppConta {
         String situacaoEmprestimo;
         String situacaoEspecial;
 
-
+        init();
         conta.senha = senhaNova();
         conta.numConta = "12346";
         conta.agencia = "4004";
