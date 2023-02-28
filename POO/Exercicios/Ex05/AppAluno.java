@@ -8,18 +8,21 @@ public class AppAluno {
 
         Aluno aluno = new Aluno();
         System.out.println("Digite o nome do aluno: ");
-        aluno.nome = scan.next();
+        aluno.nome = scan.nextLine();
         System.out.println("Digite o número da matricula: ");
-        aluno.matricula = scan.next();
+        aluno.matricula = scan.nextInt();
+        scan.nextLine();
         System.out.println("Digite a idade do aluno: ");
         aluno.idade = scan.nextInt();
+        scan.nextLine();
         System.out.println("Digite o curso do aluno: ");
-        aluno.curso = scan.next();
+        aluno.curso = scan.nextLine();
+
 
         aluno.disciplina = new String[3];
         for(int i = 0; i < aluno.disciplina.length; i++){
             System.out.println("Digite o nome da disciplina: " + i);
-            aluno.disciplina[i] = scan.next();
+            aluno.disciplina[i] = scan.nextLine();
         }
 
         for (int i = 0; i < aluno.notasDisciplinas.length; i++){
@@ -32,7 +35,17 @@ public class AppAluno {
 
         aluno.mostrarInfo();
 
-
-
+        for (int i=0; i<aluno.disciplina.length; i++){
+            if (aluno.verificarAprovado(i)){
+                System.out.println("Disciplina: " + aluno.disciplina[i]);
+                System.out.println("Aprovado!");
+            }else if (aluno.verificarRecuperacao(i)){
+                System.out.println("Disciplina: " + aluno.disciplina[i]);
+                System.out.println("Recuperação");
+            }else{
+                System.out.println("Disciplina: " + aluno.disciplina[i]);
+                System.out.println("Reprovado");
+            }
+        }
     }
 }

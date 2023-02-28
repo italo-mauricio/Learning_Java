@@ -2,7 +2,7 @@ package POO.Exercicios.Ex05;
 
 public class Aluno {
     String nome;
-    String matricula;
+    int matricula;
     String curso;
     String[] disciplina;
     double[][] notasDisciplinas = new double[3][4];
@@ -23,5 +23,37 @@ public class Aluno {
             }
             System.out.println();
         }
+    }
+
+    boolean verificarAprovado(int indice){
+
+        double soma = 0;
+
+        for(int i = 0; i < notasDisciplinas[indice].length; i++){
+            soma += notasDisciplinas[indice][i];
+        }
+
+        double media = soma / 4;
+
+        if(media >= 7){
+            return true;
+        }
+        return false;
+    }
+
+    boolean verificarRecuperacao(int indice){
+
+        double soma = 0;
+
+        for (int i = 0; i < notasDisciplinas[indice].length; i++){
+            soma += notasDisciplinas[indice][i];
+        }
+
+        double media = soma / 4;
+
+        if(media >= 5){
+            return true;
+        }
+        return false;
     }
 }
