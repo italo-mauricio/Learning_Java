@@ -26,7 +26,7 @@ public class ContaCorrente {
             // não tem saldo na conta
             if (especial){
                 // verificar se o limite especial tem saldo
-                double limite = limiteEspecial - saldo;
+                double limite = limiteEspecial + saldo;
                 if(limite >= quantidadeSaque){
                     saldo -= quantidadeSaque;
                     return true;
@@ -37,6 +37,15 @@ public class ContaCorrente {
                 return false;   // não é conta espcial, não tem saldo suficiente
             }
         }
+    }
+
+
+    void depositar (double valorDepositado){
+        saldo += valorDepositado;
+    }
+
+    void consultarSaldo(){
+        System.out.println("Saldo da conta: " + saldo);
     }
 
 }

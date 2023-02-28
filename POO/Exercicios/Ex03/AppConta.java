@@ -46,10 +46,9 @@ public class AppConta {
         conta.emprestimoAtivo = true;
         conta.especial = true;
         conta.limiteEspecial = 500.0;
-        conta.saldo = 100;
+        conta.saldo = -10;
         conta.valorEspecialUsado = 0;
         boolean aproved = false;
-        boolean saqueEfetuado = conta.realizarSaque(2000);
 
 
 
@@ -84,6 +83,7 @@ public class AppConta {
                 System.out.println("Saldo: " + conta.saldo);
 
 
+                boolean saqueEfetuado = conta.realizarSaque(400);
                 System.out.println("Deseja sacar dinheiro da sua conta? ");
                 String resposta = scan.next();
                 if (resposta.equalsIgnoreCase("S")) {
@@ -97,6 +97,16 @@ public class AppConta {
                 } else if (resposta.equalsIgnoreCase("N")) {
                     System.out.println("Obrigado!");
                     break;
+                }
+
+                System.out.println("Deseja depositar 1000 reais?: ");
+                String respostaDois = scan.next();
+                if (respostaDois.equalsIgnoreCase("S")){
+                    conta.depositar(1000);
+                    conta.consultarSaldo();
+                    break;
+                }else{
+                    System.out.println("Não foi possível depositar");
                 }
             } else {
                 System.out.println("Senha incorreta, tente novamente!");
