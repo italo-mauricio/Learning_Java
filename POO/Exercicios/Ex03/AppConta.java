@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class AppConta {
 
 
-    private static String init(){
+    private static String logo(){
         String logo = "Bem vindos ao Banco Digital!";
         System.out.println(logo);
         return logo;
@@ -38,7 +38,7 @@ public class AppConta {
         String situacaoEmprestimo;
         String situacaoEspecial;
 
-        init();
+        logo();
         conta.senha = senhaNova();
         conta.numConta = "12346";
         conta.agencia = "4004";
