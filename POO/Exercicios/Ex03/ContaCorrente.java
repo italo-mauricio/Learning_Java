@@ -48,6 +48,22 @@ public class ContaCorrente {
         System.out.println("Saldo da conta: " + saldo);
     }
 
+    void consultarLimiteEspecial(){
+        System.out.println("Limite especial" + limiteEspecial);
+    }
+
+    void consultarCvv(){
+        System.out.println("CVV" + cvv);
+    }
+
+    void consultarAgencia(){
+        System.out.println("Agência: " + agencia);
+    }
+
+    void consultarNumConta(){
+        System.out.println("Número da conta: " + numConta);
+    }
+
 }
 
 

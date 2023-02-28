@@ -59,7 +59,6 @@ public class AppConta {
             situacaoEmprestimo = "Empréstimo inativo";
         }
         if (conta.especial) {
-            situacaoEspecial = String.valueOf(conta.especial);
             situacaoEspecial = "Conta especial ATIVA";
         } else {
             situacaoEspecial = "Conta especial INATIVA";
@@ -74,13 +73,14 @@ public class AppConta {
             if (senha.equals(conta.senha)) {
                 aproved = true;
                 System.out.println("Senha aprovada!");
-                System.out.println("Número da conta: " + conta.numConta);
-                System.out.println("Agencia: " + conta.agencia);
-                System.out.println("CVV: " + conta.cvv);
+                conta.consultarNumConta();
+                conta.consultarAgencia();
+                conta.consultarCvv();
+                conta.consultarLimiteEspecial();
+                conta.consultarSaldo();
                 System.out.println("Situação da conta: " + situacaoEspecial);
                 System.out.println("Situação de empréstimo: " + situacaoEmprestimo);
-                System.out.println("Limite cheque especial: " + conta.limiteEspecial);
-                System.out.println("Saldo: " + conta.saldo);
+
 
 
                 boolean saqueEfetuado = conta.realizarSaque(400);
@@ -89,7 +89,7 @@ public class AppConta {
                 if (resposta.equalsIgnoreCase("S")) {
                     if (saqueEfetuado) {
                         System.out.println("Saque efetuado com sucesso!");
-                        System.out.println("Saldo atual da conta: " + conta.saldo);
+                        conta.consultarSaldo();
                     } else {
                         System.out.println("Não foi possível realizar saque");
                         System.out.println("Seu saldo é insuficiente");
