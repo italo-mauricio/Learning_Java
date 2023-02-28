@@ -18,16 +18,19 @@ public class AppAluno {
 
         aluno.disciplina = new String[3];
         for(int i = 0; i < aluno.disciplina.length; i++){
-            System.out.println("Digite a disciplina: " + i);
+            System.out.println("Digite o nome da disciplina: " + i);
             aluno.disciplina[i] = scan.next();
         }
 
         for (int i = 0; i < aluno.notasDisciplinas.length; i++){
             System.out.println("Obtendo notas da disciplina " + aluno.disciplina[i]);
             for(int j = 0; j < aluno.notasDisciplinas[i].length; j++){
-
+                System.out.println("Digite a nota " + (j+1));
+                aluno.notasDisciplinas[i][j] = scan.nextDouble();
             }
         }
+
+        aluno.mostrarInfo();
 
 
 
