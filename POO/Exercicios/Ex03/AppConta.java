@@ -84,7 +84,7 @@ public class AppConta {
 
 
                 boolean saqueEfetuado = conta.realizarSaque(400);
-                System.out.println("Deseja sacar dinheiro da sua conta? ");
+                System.out.println("Deseja sacar 400 reais?: ");
                 String resposta = scan.next();
                 if (resposta.equalsIgnoreCase("S")) {
                     if (saqueEfetuado) {
