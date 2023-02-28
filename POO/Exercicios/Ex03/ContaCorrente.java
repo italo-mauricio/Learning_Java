@@ -64,6 +64,9 @@ public class ContaCorrente {
         System.out.println("Número da conta: " + numConta);
     }
 
+    boolean verificarUsoChequeEspecial(){
+        return saldo < 0;
+    }
 }
 
 

@@ -94,19 +94,29 @@ public class AppConta {
                         System.out.println("Não foi possível realizar saque");
                         System.out.println("Seu saldo é insuficiente");
                     }
+                    if (conta.verificarUsoChequeEspecial()){
+                        System.out.println("Está usando cheque especial!");
+                    }else{
+                        System.out.println("Não está usando cheque especial!");
+                    }
                 } else if (resposta.equalsIgnoreCase("N")) {
                     System.out.println("Obrigado!");
                     break;
                 }
+
 
                 System.out.println("Deseja depositar 1000 reais?: ");
                 String respostaDois = scan.next();
                 if (respostaDois.equalsIgnoreCase("S")){
                     conta.depositar(1000);
                     conta.consultarSaldo();
-                    break;
                 }else{
                     System.out.println("Não foi possível depositar");
+                }
+                if (conta.verificarUsoChequeEspecial()){
+                    System.out.println("Está usando cheque especial!");
+                }else{
+                    System.out.println("Não está usando cheque especial!");
                 }
             } else {
                 System.out.println("Senha incorreta, tente novamente!");
