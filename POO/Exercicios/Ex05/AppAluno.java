@@ -7,16 +7,18 @@ public class AppAluno {
         Scanner scan = new Scanner(System.in);
 
         Aluno aluno = new Aluno();
-        System.out.println("Digite o nome do aluno: ");
+        System.out.print("Digite o nome do aluno: ");
         aluno.nome = scan.nextLine();
-        System.out.println("Digite o número da matricula: ");
+        System.out.print("Digite o número da matricula: ");
         aluno.matricula = scan.nextInt();
         scan.nextLine();
-        System.out.println("Digite a idade do aluno: ");
+        System.out.print("Digite a idade do aluno: ");
         aluno.idade = scan.nextInt();
         scan.nextLine();
-        System.out.println("Digite o curso do aluno: ");
+        System.out.print("Digite o curso do aluno: ");
         aluno.curso = scan.nextLine();
+        System.out.print("Digite em qual período você esta: ");
+        aluno.periodo = scan.nextLine();
 
 
         aluno.disciplina = new String[3];
@@ -34,6 +36,8 @@ public class AppAluno {
         }
 
         aluno.mostrarInfo();
+        System.out.println(" -------------------------------------------- ");
+        System.out.println(" -                Resultado                 - ");
 
         for (int i=0; i<aluno.disciplina.length; i++){
             if (aluno.verificarAprovado(i)){

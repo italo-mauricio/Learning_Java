@@ -39,7 +39,6 @@ public class ContaCorrente {
         }
     }
 
-
     void depositar (double valorDepositado){
         saldo += valorDepositado;
     }
