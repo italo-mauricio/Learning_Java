@@ -35,7 +35,7 @@ public class Aluno {
 
         double media = soma / 4;
 
-        if(media >= 7){
+        if(media >= 5){
             return true;
         }
         return false;
@@ -51,7 +51,7 @@ public class Aluno {
 
         double media = soma / 4;
 
-        if(media >= 5){
+        if(media >= 3){
             return true;
         }
         return false;
