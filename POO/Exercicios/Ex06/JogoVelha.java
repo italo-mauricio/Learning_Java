@@ -40,4 +40,11 @@ public class JogoVelha {
         }
         return false;
     }
+
+    boolean vezJogador1(){
+        if (jogada % 2 == 1){
+            return true;
+        }
+        return false;
+    }
 }
