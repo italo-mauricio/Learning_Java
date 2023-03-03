@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class JogoVelha {
 
+
     char[][] jogoVelha = new char[3][3];
     int jogada = 1;
 
