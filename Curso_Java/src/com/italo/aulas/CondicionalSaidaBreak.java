@@ -1,0 +1,21 @@
+package Curso_Java.src.com.italo.aulas;
+
+import java.util.Scanner;
+
+public class CondicionalSaidaBreak {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int num = scan.nextInt();
+        System.out.print("Digite um limite: ");
+        int maximo = scan.nextInt();
+
+        for (int i = num; i <= maximo; i++){
+            if (i % 7 == 0){
+                continue;   // ele vai pular toda vez que for um múltiplo de 7
+            }
+            System.out.println("O valor de i: " + i);
+        }
+    }
+}
