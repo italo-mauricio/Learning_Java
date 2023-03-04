@@ -15,7 +15,7 @@ public class CarroTeste {
     }
 
     public CarroTeste(String marca, String modelo){
-        this("Ferrari", "Spider", 10);
+        this(marca, modelo, 10);
         System.out.println("Chamando o construtor com 2 parâmetros");
     }
 
