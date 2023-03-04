@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class JogoVelha {
 
 
-    char[][] jogoVelha = new char[3][3];
-    int jogada = 1;
+    char[][] jogoVelha;
+    int jogada;
+
+    public JogoVelha(){
+        char[][] jogoVelha = new char[3][3];   //assim é mais elegante
+        jogada = 1;
+    }
 
 
     boolean validarJogada(int linha, int coluna, char sinal){
