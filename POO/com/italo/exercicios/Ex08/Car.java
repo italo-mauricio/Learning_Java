@@ -5,13 +5,16 @@ public class Car {
     String modelo;
     int numPassageiros;
 
-    Car(String marca_, String modelo_, int numPassageiros_){
+    double capCombustivel;
+    double consumoCombustivel;
+
+    Car(String marca_, String modelo_, int numPassageiros_, double capCombustivel_, double consumoCombustivel_){
         marca = marca_;
         modelo = modelo_;
         numPassageiros = numPassageiros_;
+        capCombustivel = capCombustivel_;
+        consumoCombustivel = consumoCombustivel_;
     }
-    double capCombustivel;
-    double consumoCombustivel;
 
     void exibirAutonomia(){
         System.out.println("A autonomia do carro é: " + (capCombustivel * consumoCombustivel) + "km");
