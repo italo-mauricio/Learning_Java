@@ -22,7 +22,7 @@ public class CarroTeste {
 
 
     void exibirAutonomia(){
-        System.out.println("A autonomia do carro é: " + (capCombustivel * consumoCombustivel) + "km");
+        System.out.println("A autonomia do carro é: " + (this.capCombustivel * this.consumoCombustivel) + "km");
     }
 
     double obterAutonomia(){
@@ -30,7 +30,7 @@ public class CarroTeste {
     }
 
     double calcularCombustivel (double km){
-        double qtdCombustivel = km / consumoCombustivel;
+        double qtdCombustivel = km / this.consumoCombustivel;
         return qtdCombustivel;
     }
 }
