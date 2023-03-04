@@ -4,6 +4,7 @@ public class AppContatos {
     public static void main(String[] args) {
         Contatos contato1 = new Contatos();
 
+
         contato1.nome = "italo";
         contato1.email = "italomauricio98@gmail.com";
         contato1.endereco = "rua tal de tal";

@@ -5,9 +5,10 @@ public class Car {
     String modelo;
     int numPassageiros;
 
-    Car(){
-        System.out.println("Entrou!");
-        System.out.println("Classe carro foi instanciada");
+    Car(String marca_, String modelo_, int numPassageiros_){
+        marca = marca_;
+        modelo = modelo_;
+        numPassageiros = numPassageiros_;
     }
     double capCombustivel;
     double consumoCombustivel;
