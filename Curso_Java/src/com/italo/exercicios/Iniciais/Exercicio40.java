@@ -1,7 +1,8 @@
 package Curso_Java.src.com.italo.exercicios.Iniciais;
 
+
 /***
- * faça um programa que apresente só os números ímpares
+ * Write a program that only displays odd numbers
  */
 public class Exercicio40 {
     public static void main(String[] args) {

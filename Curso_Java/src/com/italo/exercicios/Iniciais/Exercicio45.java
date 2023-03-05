@@ -6,22 +6,23 @@ public class Exercicio45 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+
         int num;
-        int pares = 0;
-        int impares = 0;
+        int evens = 0;
+        int odds = 0;
 
         for (int i = 0; i < 10; i++){
-            System.out.println("Digite um número: ");
+            System.out.println("Enter a number: ");
             num = scan.nextInt();
 
             if (num % 2 == 0){
-                pares++;
+                evens++;
             }else{
-                impares++;
+                odds++;
             }
 
         }
-        System.out.println("Pares: " + pares);
-        System.out.println("Ímpares: " + impares);
+        System.out.println("Evens: " + evens);
+        System.out.println("Odds: " + odds);
     }
 }

@@ -6,19 +6,20 @@ public class Exercicio44 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite a base: ");
+
+        System.out.println("Enter the base: ");
         int base = scan.nextInt();
 
-        System.out.println("Digite a potência: ");
-        int pot = scan.nextInt();
+        System.out.println("Enter the exponent: ");
+        int exp = scan.nextInt();
 
-        int resultado = base;
+        int result = base;
 
-        for (int i = 1; i < pot; i++){
-            resultado += base;
+        for (int i = 1; i < exp; i++){
+            result *= base;
         }
 
-        System.out.println("Resultado: " + resultado);
+        System.out.println("Result: " + result);
 
     }
 }

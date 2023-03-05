@@ -3,24 +3,24 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * faça um programa que pela um número 5 vezes, some e tire a média
- */
 
+ Make a program that prompts the user to enter a number 5 times, sums them up and calculates the average.
+ */
 public class Exercicio39 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double media;
+        double average;
         int num;
-        int soma = 0;
+        int sum = 0;
 
-        for (int i=0; i<5; i++){
-            System.out.print("Digite um número: ");
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter a number: ");
             num = scan.nextInt();
-            soma += num;
+            sum += num;
         }
-        media = soma / 5;
+        average = sum / 5.0;
 
-        System.out.println("Soma: " + soma);
-        System.out.println("Media: " + media);
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
     }
 }
