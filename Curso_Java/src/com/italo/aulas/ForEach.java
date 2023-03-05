@@ -16,7 +16,7 @@ public class ForEach {
         }
 
         // usando for each
-        System.out.println("Utilizando o for each: ");
+        System.out.println("\nUtilizando o for each: ");
         for(int nota : notas){
             System.out.print(nota);
         }
@@ -43,7 +43,7 @@ public class ForEach {
 
         for (double[] notasAluno : notasAlunos){
                 for(double nota : notasAluno){
-                    System.out.print(nota + " ");
+                    System.out.print(nota + " | ");
                 }
             System.out.println();
         }
