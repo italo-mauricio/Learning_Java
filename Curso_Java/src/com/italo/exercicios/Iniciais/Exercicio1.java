@@ -3,17 +3,18 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Exercicio 1:
- *
- * Faça um programa que peça um número e então mostre a mensagem: O número informado foi[numero]
+
+ Exercise 1:
+
+ Write a program that asks for a number and then shows the message: The number entered was [number]
+
  */
 public class Exercicio1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Digite um número ");
+        System.out.print("Enter a number: ");
         int num = scan.nextInt();
 
-        System.out.println("O número informado foi: " + num);
-
+        System.out.println("The number entered was: " + num);
     }
 }

@@ -8,13 +8,13 @@ public class Exercicio12 {
     public static final double TAXA_SINDICATO = 0.05;
 
     public static void main(String[] args) {
-        Scanner scannerEntrada = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Digite quanto você recebe por hora: ");
-        double valorHora = scannerEntrada.nextDouble();
+        double valorHora = scan.nextDouble();
 
         System.out.print("Digite a quantidade de horas trabalhadas no mês: ");
-        double horas = scannerEntrada.nextDouble();
+        double horas = scan.nextDouble();
 
         double salarioBruto = calcularSalarioBruto(valorHora, horas);
         double totalDescontos = calcularDescontos(salarioBruto);
