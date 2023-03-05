@@ -3,9 +3,10 @@ package Curso_Java.src.com.italo.aulas;
 public class LoopFor {
     public static void main(String[] args) {
         // loop de repetição normal
-        for (int i=0;i<10;i++){
+        for (int i=0; i<11; i++){
             System.out.println("I tem o valor de: " + i);
         }
+        System.out.println();
         for (int i = 5; i > 0; i--){
             System.out.println("I tem o valor de: " + i);
         }
