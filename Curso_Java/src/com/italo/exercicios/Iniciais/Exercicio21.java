@@ -1,44 +1,43 @@
 package Curso_Java.src.com.italo.exercicios.Iniciais;
 
 import java.util.Scanner;
-
 /***
- * Faça um programa que verifica em qual turno o aluno estuda
+
+ Create a program that checks which shift the student studies
  */
 public class Exercicio21 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("ESCOLHA UMA DAS OPÇÕES: [M / V / N]  ");
-        String turno = scan.next();
-
-//OPÇÃO COM IF ELSE
-        if (turno.equalsIgnoreCase("m")){
-            System.out.println("Você digitou M-Matutino");
-            System.out.println("A UFRN te deseja um BOM DIA!");
-        } else if (turno.equalsIgnoreCase("v")){
-            System.out.println("Você digitou V-Vespertino");
-            System.out.println("A UFRN te deseja uma BOA TARDE!");
-        } else if (turno.equalsIgnoreCase("n")){
-            System.out.println("Você digitou N-Noturno");
-            System.out.println("A UFRN te deseja uma BOA NOITE!");
+        System.out.print("CHOOSE ONE OF THE OPTIONS: [M / V / N]  ");
+        String shift = scan.next();
+//OPTION WITH IF ELSE
+        if (shift.equalsIgnoreCase("m")){
+            System.out.println("You chose M-Morning");
+            System.out.println("UFRN wishes you a GOOD MORNING!");
+        } else if (shift.equalsIgnoreCase("v")){
+            System.out.println("You chose V-Afternoon");
+            System.out.println("UFRN wishes you a GOOD AFTERNOON!");
+        } else if (shift.equalsIgnoreCase("n")){
+            System.out.println("You chose N-Night");
+            System.out.println("UFRN wishes you a GOOD NIGHT!");
         } else {
-            System.out.println("Turno digitado é inválido");
+            System.out.println("Invalid shift entered");
         }
 
-// OPÇÃO com SWITCH CASE
-    switch (turno){
-        case "m":
-        case "M":
-            System.out.println("Bom dia!"); break;
-        case "v":
-        case "V":
-            System.out.println("Boa tarde!"); break;
-        case "n":
-        case "N":
-            System.out.println("Boa noite!"); break;
-        default:
-            System.out.println("Valor inválido!"); break;
-    }
+// OPTION WITH SWITCH CASE
+        switch (shift){
+            case "m":
+            case "M":
+                System.out.println("Good morning!"); break;
+            case "v":
+            case "V":
+                System.out.println("Good afternoon!"); break;
+            case "n":
+            case "N":
+                System.out.println("Good night!"); break;
+            default:
+                System.out.println("Invalid value!"); break;
+        }
     }
 }

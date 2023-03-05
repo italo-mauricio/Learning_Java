@@ -2,59 +2,61 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 
 import java.util.Scanner;
 
-
 /***
- * Faça um programa que lê as duas notas de um aluno parciais obtidas numa disciplina ao longo do semestre
- * e calcule a sua média.
+
+ Create a program that reads two partial grades obtained by a student in a discipline during the semester
+
+ and calculates the student's average.
  */
 public class Exercicio24 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite a primeira nota: ");
-        float nota1 = scan.nextFloat();
-        System.out.print("Digite a segunda nota: ");
-        float nota2 = scan.nextFloat();
 
-        double media = (nota1 + nota2) / 2;
+        System.out.print("Enter the first grade: ");
+        float grade1 = scan.nextFloat();
+        System.out.print("Enter the second grade: ");
+        float grade2 = scan.nextFloat();
 
-        String aproveitamento = "";
+        double average = (grade1 + grade2) / 2;
 
-        if (media >= 9 && media <= 10){
-            aproveitamento = "A";
-        } else if (media >= 7.5 && media < 9){
-            aproveitamento = "B";
-        } else if (media >= 6 && media < 7.5){
-            aproveitamento = "C";
-        } else if (media >= 4 && media < 6){
-            aproveitamento = "D";
-        } else if (media >= 0 && media < 4){
-            aproveitamento = "E";
+        String performance = "";
+
+        if (average >= 9 && average <= 10){
+            performance = "A";
+        } else if (average >= 7.5 && average < 9){
+            performance = "B";
+        } else if (average >= 6 && average < 7.5){
+            performance = "C";
+        } else if (average >= 4 && average < 6){
+            performance = "D";
+        } else if (average >= 0 && average < 4){
+            performance = "E";
         }
 
-        System.out.println("Nota 1: " + nota1);
-        System.out.println("Nota 2: " + nota2);
-        System.out.println("Média: " + media);
-        System.out.println("Aproveitamente: " + aproveitamento);
+        System.out.println("Grade 1: " + grade1);
+        System.out.println("Grade 2: " + grade2);
+        System.out.println("Average: " + average);
+        System.out.println("Performance: " + performance);
 
-        switch (aproveitamento){
+        switch (performance){
             case "A":
-                System.out.println("Aprovado");
+                System.out.println("Approved");
                 break;
             case "B":
-                System.out.println("Aprovado");
+                System.out.println("Approved");
                 break;
             case "C":
-                System.out.println("Aprovado");
+                System.out.println("Approved");
                 break;
             case "D":
-                System.out.println("Reprovado");
+                System.out.println("Failed");
                 break;
             case "E":
-                System.out.println("Reprovado");
+                System.out.println("Failed");
                 break;
             default:
-                System.out.println("Dados inválidos!");
+                System.out.println("Invalid data!");
                 break;
         }
     }

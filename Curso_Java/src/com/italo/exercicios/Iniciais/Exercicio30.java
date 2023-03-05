@@ -3,54 +3,57 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * faça um mini jogo de perguntas e respostas perguntando se uma pessoa presenciou ou nao um crime
+
+ Create a mini game of questions and answers asking if a person witnessed a crime or not
  */
+
 public class Exercicio30 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("=======================");
-        System.out.println("-    JOGO DETETIVE    -");
-        System.out.println("-                     -");
+        System.out.println("- DETECTIVE GAME -");
+        System.out.println("- -");
         System.out.println("=======================");
-        System.out.println("Por favor digite o nome do seu personagem: ");
-        String nome = scan.next();
-        System.out.println("Bem vindo " + nome + " houve um assasinato esta manhã\n" +
-                " e populares disseram que viram você pelas redondezas hoje, vamos te fazer algumas perguntas.");
-        System.out.print("Você telefonou para a vitima [S/N]: ");
-        String pergunta1 = scan.next();
-        System.out.print("Você esteve no local do crime [S/N]: ");
-        String pergunta2 = scan.next();
-        System.out.print("Você mora perto da vítima [S/N]: ");
-        String pergunta3 = scan.next();
-        System.out.print("Você devia para a vítima [S/N]: ");
-        String pergunta4 = scan.next();
-        System.out.print("Você já trabalhou com a vítima [S/N]");
-        String pergunta5 = scan.next();
+        System.out.println("Please enter your character name: ");
+        String name = scan.next();
+        System.out.println("Welcome " + name + " there was a murder this morning\n" +
+                "and people said they saw you around the area today, we are going to ask you some questions.");
+        System.out.print("Did you call the victim [Y/N]: ");
+        String question1 = scan.next();
+        System.out.print("Were you at the scene of the crime [Y/N]: ");
+        String question2 = scan.next();
+        System.out.print("Do you live near the victim [Y/N]: ");
+        String question3 = scan.next();
+        System.out.print("Do you owe the victim money [Y/N]: ");
+        String question4 = scan.next();
+        System.out.print("Have you ever worked with the victim [Y/N]: ");
+        String question5 = scan.next();
 
-        int cont = 0;
-        if (pergunta1.equalsIgnoreCase("S")){
-            cont++;
+
+        int count = 0;
+        if (question1.equalsIgnoreCase("Y")){
+            count++;
         }
-        if (pergunta2.equalsIgnoreCase("S")){
-            cont++;
+        if (question2.equalsIgnoreCase("Y")){
+            count++;
         }
-        if (pergunta3.equalsIgnoreCase("S")){
-            cont++;
+        if (question3.equalsIgnoreCase("Y")){
+            count++;
         }
-        if (pergunta4.equalsIgnoreCase("S")){
-            cont++;
+        if (question4.equalsIgnoreCase("Y")){
+            count++;
         }
-        if (pergunta5.equalsIgnoreCase("S")){
-            cont++;
+        if (question5.equalsIgnoreCase("Y")){
+            count++;
         }
-        if (cont == 2 || cont == 1){
-            System.out.println("Okay, você é suspeito");
-        }else if(cont == 3 || cont == 4){
-            System.out.println("Você é cúmplice");
-        }else if(cont == 5){
-            System.out.println("Você está preso, você é o culpado!");
+        if (count == 2 || count == 1){
+            System.out.println("Okay, you are a suspect");
+        }else if(count == 3 || count == 4){
+            System.out.println("You are an accomplice");
+        }else if(count == 5){
+            System.out.println("You are under arrest, you are guilty!");
         }else {
-            System.out.println("Okay, está liberado!");
+            System.out.println("Okay, you are free to go!");
         }
     }
 }

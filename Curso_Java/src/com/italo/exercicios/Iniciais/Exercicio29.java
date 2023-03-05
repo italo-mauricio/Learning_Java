@@ -2,49 +2,50 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 
 import java.util.Scanner;
 
-/***
- * Faça um programa que peça 2 números e faça operações com eles, depois
- * determine se o número é positivo ou negativo e se ele é par ou ímpar
- */
 
+/***
+
+ Write a program that asks for 2 numbers and performs operations with them, then
+ determine if the result is positive or negative and if it's even or odd
+ */
 public class Exercicio29 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite o primeiro número: ");
+        System.out.print("Enter the first number: ");
         int num1 = scan.nextInt();
-        System.out.print("Digite o segundo número: ");
+        System.out.print("Enter the second number: ");
         int num2 = scan.nextInt();
 
-        System.out.print("Digite a operação: (+ - / *) ");
-        String operacao = scan.next();
+        System.out.print("Enter the operation: (+ - / *) ");
+        String operation = scan.next();
 
-        double resultado = 0;
-        boolean valida = true;
+        double result = 0;
+        boolean valid = true;
 
-        switch (operacao) {
-            case "+" -> resultado = num1 + num2;
-            case "-" -> resultado = num1 - num2;
-            case "*" -> resultado = num1 * num2;
-            case "/" -> resultado = num1 / num2;
+        switch (operation) {
+            case "+" -> result = num1 + num2;
+            case "-" -> result = num1 - num2;
+            case "*" -> result = num1 * num2;
+            case "/" -> result = num1 / num2;
             default -> {
-                System.out.println("Operação inválida");
-                valida = false;
+                System.out.println("Invalid operation");
+                valid = false;
             }
         }
 
-        if (valida){
+        if (valid){
 
-            System.out.println("Resultado: " + resultado);
-            if (resultado >= 0){
-                System.out.println("Resultado positivo");
+            System.out.println("Result: " + result);
+            if (result >= 0){
+                System.out.println("Positive result");
             }else{
-                System.out.println("Resultado negativo");
+                System.out.println("Negative result");
             }
-            if (resultado % 2 == 0){
-                System.out.println("É um resultado par");
+            if (result % 2 == 0){
+                System.out.println("Even result");
             }else{
-                System.out.println("Resultado ímpar");
+                System.out.println("Odd result");
             }
         }
 

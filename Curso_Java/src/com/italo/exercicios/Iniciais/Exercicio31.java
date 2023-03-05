@@ -5,36 +5,36 @@ import java.util.Scanner;
 public class Exercicio31 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Digite a quantidade de litros vendidos: ");
-        double litros = scan.nextDouble();
+        System.out.println("Enter the quantity of liters sold: ");
+        double liters = scan.nextDouble();
 
-        System.out.println("Digite o tipo de combustível: ");
-        String tipo = scan.next();
+        System.out.println("Enter the type of fuel: ");
+        String type = scan.next();
 
-        double precoGas = 2.5;
-        double precoAlcool = 1.9;
-        int precoDesconto = 0;
+        double gasPrice = 2.5;
+        double ethanolPrice = 1.9;
+        int discountPrice = 0;
         double total = 0;
-        double totalDesconto = 0;
+        double totalDiscount = 0;
 
-        if (tipo.equalsIgnoreCase("a")){
-            if (litros <= 20){
-                precoDesconto = 3;
-            }else{
-                precoDesconto = 5;
+        if (type.equalsIgnoreCase("a")) {
+            if (liters <= 20) {
+                discountPrice = 3;
+            } else {
+                discountPrice = 5;
             }
-            total = litros * precoAlcool;
+            total = liters * ethanolPrice;
 
-        } else if (tipo.equalsIgnoreCase("g")){
-            if (litros <= 20){
-                precoDesconto = 4;
-            }else {
-                precoDesconto = 6;
+        } else if (type.equalsIgnoreCase("g")) {
+            if (liters <= 20) {
+                discountPrice = 4;
+            } else {
+                discountPrice = 6;
             }
-            total = litros * precoGas;
+            total = liters * gasPrice;
         }
-        totalDesconto = (total / 100) * precoDesconto;
-        double precoApagar = total - totalDesconto;
-        System.out.println("Valor a ser pago: " + precoApagar);
+        totalDiscount = (total / 100) * discountPrice;
+        double priceToPay = total - totalDiscount;
+        System.out.println("Amount to be paid: " + priceToPay);
     }
 }

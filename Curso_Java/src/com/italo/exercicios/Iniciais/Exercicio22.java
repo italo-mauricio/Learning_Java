@@ -9,30 +9,30 @@ public class Exercicio22 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite o seu salário: ");
-        double salario = scan.nextDouble();
-        double vinteCent = (20.0/100.0) * salario;
-        double quinzeCent = (15.0/100.0) * salario;
-        double dezCent = (10.0/100.0) * salario;
-        double cincoCent = (5.0/100.0) * salario;
 
-        if (salario <= 280){
-            System.out.println("Seu salário antes do reajuste: " + salario + " R$");
-            System.out.println("Seu salário aumentou: " + vinteCent + " R$");
-            System.out.println("Seu salário com um aumento de 20% fica: " + (salario += vinteCent) + " R$");
-        }else if(salario <= 700){
-            System.out.println("Seu salário antes do reajuste: " + salario + " R$");
-            System.out.println("Seu salário aumentou: " + quinzeCent + " R$");
-            System.out.println("Seu salário com um aumento de 15% fica: " + (salario += quinzeCent) + " R$");
-        }else if (salario <= 1500){
-            System.out.println("Seu salário antes do reajuste: " + salario + " R$");
-            System.out.println("Seu salário aumentou: " + dezCent + " R$");
-            System.out.println("Seu salário com um aumento de 10% fica: " + (salario += dezCent) + " R$");
+        System.out.print("Enter your salary: ");
+        double salary = scan.nextDouble();
+        double twentyPercent = (20.0/100.0) * salary;
+        double fifteenPercent = (15.0/100.0) * salary;
+        double tenPercent = (10.0/100.0) * salary;
+        double fivePercent = (5.0/100.0) * salary;
+
+        if (salary <= 280){
+            System.out.println("Your salary before the adjustment: " + salary + " R$");
+            System.out.println("Your salary increased by: " + twentyPercent + " R$");
+            System.out.println("Your salary after a 20% increase is: " + (salary += twentyPercent) + " R$");
+        }else if(salary <= 700){
+            System.out.println("Your salary before the adjustment: " + salary + " R$");
+            System.out.println("Your salary increased by: " + fifteenPercent + " R$");
+            System.out.println("Your salary after a 15% increase is: " + (salary += fifteenPercent) + " R$");
+        }else if (salary <= 1500){
+            System.out.println("Your salary before the adjustment: " + salary + " R$");
+            System.out.println("Your salary increased by: " + tenPercent + " R$");
+            System.out.println("Your salary after a 10% increase is: " + (salary += tenPercent) + " R$");
         }else {
-            System.out.println("Seu salário antes do reajuste: " + salario + " R$");
-            System.out.println("Seu salário aumentou: " + cincoCent + " R$");
-            System.out.println("Seu salário com um aumento de 5% fica: " + (salario += cincoCent) + " R$");
+            System.out.println("Your salary before the adjustment: " + salary + " R$");
+            System.out.println("Your salary increased by: " + fivePercent + " R$");
+            System.out.println("Your salary after a 5% increase is: " + (salary += fivePercent) + " R$");
         }
     }
-
 }

@@ -3,31 +3,35 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Verificar se uma letra digitada é uma vogal ou consoante
+
+ Check if a typed letter is a vowel or consonant
  */
+
 public class Exercicio20 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Digite uma letra: ");
-        String letra = scan.next();
-// primeira forma com IF ELSE
+        System.out.println("Type a letter: ");
+        String letter = scan.next();
 
-        if (letra.length() > 1){
-            System.out.println("Impossivel continuar, você digitou mais de uma letra");
-        }else{
-            if (letra.equalsIgnoreCase("a") ||
-                    letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") ||
-                    letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")){
-                System.out.println("Vogal");
-            }else {
-                System.out.println("Consoante");
+
+        // first way with IF ELSE
+        if (letter.length() > 1) {
+            System.out.println("Impossible to continue, you typed more than one letter");
+        } else {
+            if (letter.equalsIgnoreCase("a") ||
+                    letter.equalsIgnoreCase("e") || letter.equalsIgnoreCase("i") ||
+                    letter.equalsIgnoreCase("o") || letter.equalsIgnoreCase("u")) {
+                System.out.println("Vowel");
+            } else {
+                System.out.println("Consonant");
             }
         }
-// segunda forma com SWTICH CASE
-        if (letra.length() > 1){
-            System.out.println("Impossível continuar, você digitou mais de uma letra");
-        }else {
-            switch (letra) {
+
+        // second way with SWITCH CASE
+        if (letter.length() > 1) {
+            System.out.println("Impossible to continue, you typed more than one letter");
+        } else {
+            switch (letter) {
                 case "a":
                 case "e":
                 case "i":
@@ -38,10 +42,10 @@ public class Exercicio20 {
                 case "I":
                 case "O":
                 case "U":
-                    System.out.println("Vogal");
+                    System.out.println("Vowel");
                     break;
                 default:
-                    System.out.println("Consoante");
+                    System.out.println("Consonant");
             }
         }
     }
