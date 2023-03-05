@@ -1,121 +1,122 @@
 package Curso_Java.src.com.italo.exercicios.Iniciais;
 
 import java.util.Scanner;
+/*
+Create a code that validates basic registration information
+*/
+import java.util.Scanner;
 
-/***
- * faça um código que valida informações básicas de cadastro
- */
 public class Exercicio34 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String nome;
-        String sexo;
-        String estadoCivil;
-        int idade;
-        double salario;
-        boolean infoValida = false;
 
-        do{
-            System.out.print("Digite o seu nome");
-            nome = scan.next();
-            if (nome.length() >= 3){
-                infoValida = true;
-                System.out.println("Nome váliddo!");
-            }else{
-                System.out.println("Nome invalido");
-            }
-        }while (!infoValida);
-
-        infoValida = false;
+        String name;
+        String gender;
+        String maritalStatus;
+        int age;
+        double salary;
+        boolean validInfo = false;
 
         do {
-            System.out.print("Digite sua idade: ");
-            idade = scan.nextInt();
-
-            if(idade >= 0 && idade <= 120){
-                infoValida = true;
-                System.out.println("Idade válida");
-            }else{
-                System.out.println("Idade inválida!");
+            System.out.print("Enter your name: ");
+            name = scan.next();
+            if (name.length() >= 3) {
+                validInfo = true;
+                System.out.println("Valid name!");
+            } else {
+                System.out.println("Invalid name!");
             }
-        }while(!infoValida);
+        } while (!validInfo);
 
-        infoValida = false;
+        validInfo = false;
 
         do {
-            System.out.print("Digite seu salario: ");
-            salario = scan.nextDouble();
+            System.out.print("Enter your age: ");
+            age = scan.nextInt();
 
-            if (salario > 0){
-                infoValida = true;
-                System.out.println("Salário válido");
-            }else{
-                System.out.println("Salario inválido!");
+            if (age >= 0 && age <= 120) {
+                validInfo = true;
+                System.out.println("Valid age!");
+            } else {
+                System.out.println("Invalid age!");
             }
-        }while (!infoValida);
+        } while (!validInfo);
 
-        infoValida =  false;
+        validInfo = false;
 
         do {
-            System.out.print("Digite o seu sexo [M/F/O]: ");
-            sexo = scan.next();
+            System.out.print("Enter your salary: ");
+            salary = scan.nextDouble();
 
-            if (sexo.equalsIgnoreCase("f") ||
-                    sexo.equalsIgnoreCase("m") ||
-                        sexo.equalsIgnoreCase("o")){
-                infoValida = true;
-                System.out.println("Sexo válido");
-                if (sexo.equals("f")) {
-                    System.out.println("Feminino");
-                    sexo = "feminino";
-                }else if (sexo.equals("m")){
-                    System.out.println("Masculino");
-                    sexo = "Masculino";
-                }else if (sexo.equals("o")){
-                    System.out.println("Você escolheu outros");
-                    System.out.print("Digite seu gênero: ");
-                    String sexoNovo = scan.next();
-                    sexo = sexoNovo;
+            if (salary > 0) {
+                validInfo = true;
+                System.out.println("Valid salary!");
+            } else {
+                System.out.println("Invalid salary!");
+            }
+        } while (!validInfo);
+
+        validInfo = false;
+
+        do {
+            System.out.print("Enter your gender [M/F/O]: ");
+            gender = scan.next();
+
+            if (gender.equalsIgnoreCase("f") ||
+                    gender.equalsIgnoreCase("m") ||
+                    gender.equalsIgnoreCase("o")) {
+                validInfo = true;
+                System.out.println("Valid gender!");
+                if (gender.equals("f")) {
+                    System.out.println("Female");
+                    gender = "Female";
+                } else if (gender.equals("m")) {
+                    System.out.println("Male");
+                    gender = "Male";
+                } else if (gender.equals("o")) {
+                    System.out.println("You chose other");
+                    System.out.print("Enter your gender: ");
+                    String newGender = scan.next();
+                    gender = newGender;
                 }
-            }else{
-                System.out.println("Sexo inválido");
+            } else {
+                System.out.println("Invalid gender!");
             }
-        }while (!infoValida);
+        } while (!validInfo);
 
-        infoValida = false;
+        validInfo = false;
 
         do {
-            System.out.print("Digite seu estado civil [S/C/V]: ");
-            estadoCivil = scan.next();
+            System.out.print("Enter your marital status [S/C/V]: ");
+            maritalStatus = scan.next();
 
-            if (estadoCivil.equalsIgnoreCase("s") ||
-                estadoCivil.equalsIgnoreCase("c") ||
-                estadoCivil.equalsIgnoreCase("v")){
-                infoValida = true;
-                System.out.println("Estado civil válido!");
-                if (estadoCivil.equals("s")){
-                    System.out.println("Solteiro");
-                    estadoCivil = "Solteiro(a)";
-                }else if(estadoCivil.equals("c")){
-                    System.out.println("Casado");
-                    estadoCivil = "Casado(a)";
-                }else if (estadoCivil.equals("v")){
-                    System.out.println("Viuvo(a)");
-                    estadoCivil = "Viuvo(a)";
+            if (maritalStatus.equalsIgnoreCase("s") ||
+                    maritalStatus.equalsIgnoreCase("c") ||
+                    maritalStatus.equalsIgnoreCase("v")) {
+                validInfo = true;
+                System.out.println("Valid marital status!");
+                if (maritalStatus.equals("s")) {
+                    System.out.println("Single");
+                    maritalStatus = "Single";
+                } else if (maritalStatus.equals("c")) {
+                    System.out.println("Married");
+                    maritalStatus = "Married";
+                } else if (maritalStatus.equals("v")) {
+                    System.out.println("Widowed");
+                    maritalStatus = "Widowed";
                 }
-            }else{
-                System.out.println("Estado civil inválido!");
+            } else {
+                System.out.println("Invalid marital status!");
             }
-        }while (!infoValida);
+        } while (!validInfo);
 
-        System.out.println("As informações digitadas foram!!");
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Gênero: " + sexo);
-        System.out.println("Estado civil: " + estadoCivil);
-        System.out.println("Salario: " + salario + " R$");
-        System.out.println("CADASTRO EFETIVADO!");
+        System.out.println("The information entered was!!");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Gender: " + gender);
+        System.out.println("Marital status: " + maritalStatus);
+        System.out.println("Salary: " + salary + " R$");
+        System.out.println("REGISTRATION EFFECTED!");
     }
-
 }

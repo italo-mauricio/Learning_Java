@@ -2,25 +2,24 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Faça um programa simples de validação de nota
+ * Make a simple program to validate a grade
  */
 public class Exercicio32 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        boolean notaValida = false;
-        System.out.println("Vamos verificar uma validação simples!");
-        do{
-            System.out.print("Digite uma nota: ");
-            double nota = scan.nextDouble();
+        boolean validGrade = false;
+        System.out.println("Let's check a simple validation!");
+        do {
+            System.out.print("Enter a grade: ");
+            double grade = scan.nextDouble();
 
-            if (nota >= 0 && nota <= 10){
-                notaValida = true;
-                System.out.println("Você digitou: " + nota);
-            }else{
-                System.out.println("Nota inválida, digite novamente");
+            if (grade >= 0 && grade <= 10) {
+                validGrade = true;
+                System.out.println("You entered: " + grade);
+            } else {
+                System.out.println("Invalid grade, please try again");
             }
-        }while (!notaValida);
-
+        } while (!validGrade);
     }
 }
