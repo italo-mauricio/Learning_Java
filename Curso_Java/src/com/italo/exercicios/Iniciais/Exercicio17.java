@@ -3,19 +3,21 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Faça um programa que verifique se a letra digitada é maiuscula ou minuscula
+
+ Create a program that verifies if the typed letter is uppercase or lowercase.
  */
+
 public class Exercicio17 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite uma letra: ");
-        String usuario = scan.next();
+        System.out.println("Type a letter: ");
+        String user = scan.next();
 
-        if (usuario.equals(usuario.toUpperCase())){
-            System.out.println("Vc digitou uma letra MAIUSCULA");
+        if (user.equals(user.toUpperCase())){
+            System.out.println("You typed an UPPERCASE letter");
         }else{
-            System.out.println("Você digitou uma letra MINUSCULA");
+            System.out.println("You typed a LOWERCASE letter");
         }
     }
 }

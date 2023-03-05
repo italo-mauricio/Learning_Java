@@ -3,42 +3,40 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Programa básico de calcular média de semestre em Java
+
+ Basic program to calculate semester average in Java
  */
 public class Exercicio18 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("==============================");
-        System.out.println("BOLETIM SEMESTRAL UFRN");
+        System.out.println("UFRN SEMESTER GRADE REPORT");
         System.out.println(" ");
-        System.out.print("Digite o nome do Aluno: ");
-        String nomeAluno = scan.next();
-        System.out.print("Digite o número da matricula");
-        int matricula = scan.nextInt();
-        System.out.print("Digite a primeira nota do aluno: ");
-        float nota1 = scan.nextFloat();
-        System.out.print("Digite a segunda nota do aluno: ");
-        float nota2 = scan.nextFloat();
-        System.out.print("Digite a terceira nota do aluno: ");
-        float nota3 = scan.nextFloat();
-        System.out.print("Digite a quarta nota do aluno: ");
-        float nota4 = scan.nextFloat();
-        double media = (nota1 + nota2 + nota3 + nota4) / 4;
-        if (media < 3){
-            System.out.println("Aluno: " + nomeAluno + "\nMatricula: " + matricula + "\nSituação: REPROVADO\n" +
-                    "\bMédia final: " + media);
-        }else if (media <= 5){
-            System.out.println("Aluno: " + nomeAluno + "\nMatricula: " + matricula + "\nSituação: RECUPERAÇÃO\n" +
-                    "\bMédia final: " + media);
-        } else if (media <= 10) {
-            System.out.println("Aluno: " + nomeAluno + "\nMatricula: " + matricula + "\nSituação: APROVADO\n" +
-                    "\bMédia final: " + media);
+        System.out.print("Enter student's name: ");
+        String studentName = scan.next();
+        System.out.print("Enter student's ID number: ");
+        int studentID = scan.nextInt();
+        System.out.print("Enter student's first grade: ");
+        float grade1 = scan.nextFloat();
+        System.out.print("Enter student's second grade: ");
+        float grade2 = scan.nextFloat();
+        System.out.print("Enter student's third grade: ");
+        float grade3 = scan.nextFloat();
+        System.out.print("Enter student's fourth grade: ");
+        float grade4 = scan.nextFloat();
+        double average = (grade1 + grade2 + grade3 + grade4) / 4;
+        if (average < 3){
+            System.out.println("Student: " + studentName + "\nID number: " + studentID + "\nStatus: FAILED\n" +
+                    "\bFinal average: " + average);
+        }else if (average <= 5){
+            System.out.println("Student: " + studentName + "\nID number: " + studentID + "\nStatus: IN RECOVERY\n" +
+                    "\bFinal average: " + average);
+        } else if (average <= 10) {
+            System.out.println("Student: " + studentName + "\nID number: " + studentID + "\nStatus: APPROVED\n" +
+                    "\bFinal average: " + average);
         } else {
-            System.out.println("NOTA INVÁLIDA!");
+            System.out.println("INVALID GRADE!");
         }
-
     }
 }
-
-
