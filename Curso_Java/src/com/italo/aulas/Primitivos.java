@@ -22,5 +22,6 @@ public class Primitivos {
         char caractere = 'I';  // 2 bytes
         String nome = "Italo";
         System.out.println("A idade é: " + idade);
+    
     }
 }

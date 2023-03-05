@@ -22,7 +22,7 @@ public class ForEach {
         }
 
         // exemplo 2
-        System.out.println("Exemplo com Arrays multidimensionais");
+        System.out.println("\nExemplo com Arrays multidimensionais: ");
         double[][] notasAlunos = new double[3][4];
 
 

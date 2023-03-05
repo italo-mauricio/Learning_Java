@@ -5,6 +5,7 @@ public class ImpostoFluxo {
         double salario = 95000000;
         double novoSalario, porcento;
 
+
         if(salario < 1000){
             System.out.println("Você deverá pagar 10% de imposto\n");
             porcento = 10.0/100;
@@ -26,5 +27,6 @@ public class ImpostoFluxo {
         }else{
             System.out.println("Valor informado inválido!\n");
         }
+
     }
 }
