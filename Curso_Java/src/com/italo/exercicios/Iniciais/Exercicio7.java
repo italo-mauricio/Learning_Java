@@ -3,18 +3,17 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Faça um programa que pergunte quanto você ganha por hora,
- * e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no mês.
+ Create a program that asks how much you earn per hour,
+ and the number of hours worked in the month. Calculate and show your total salary for the month.
  */
-
 public class Exercicio7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Qual o seu salário por hora: ");
+        System.out.print("What is your hourly wage: ");
         double salarioPorHora = scan.nextDouble();
-        System.out.print("Quantas horas você trabalhou no mês: ");
+        System.out.print("How many hours did you work this month: ");
         double horasMes = scan.nextDouble();
 
-        System.out.println("Seu salário esse mês foi de: " + (salarioPorHora * horasMes));
+        System.out.println("Your salary this month is: " + (salarioPorHora * horasMes));
     }
 }

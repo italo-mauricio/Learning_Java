@@ -4,16 +4,16 @@ package Curso_Java.src.com.italo.exercicios.Iniciais;
 import java.util.Scanner;
 
 /***
- * Convertendo graus farenheit para celsius
+ Converting degrees Fahrenheit to Celsius
  */
 public class Exercicio8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite a temperatura em graus Farenheit: ");
-        double grausFaren = scan.nextDouble();
-        double grausCelsius = (5 * (grausFaren - 32) / 9);
-        String message = String.format("A temperatura: %.4s F convertendo para Celsius fica ===> %.4s C", grausFaren, grausCelsius );
+        System.out.print("Enter the temperature in degrees Fahrenheit: ");
+        double degreesFarenheit = scan.nextDouble();
+        double degreesCelsius = (5 * (degreesFarenheit - 32) / 9);
+        String message = String.format("The temperature: %.4s F converted to Celsius is ===> %.4s C", degreesFarenheit, degreesCelsius );
 
         System.out.println(message);
     }

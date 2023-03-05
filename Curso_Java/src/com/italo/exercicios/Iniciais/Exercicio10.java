@@ -8,25 +8,22 @@ public class Exercicio10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        // Cálculos
-        System.out.print("Digite o primeiro número: ");
+        // Calculations
+        System.out.print("Enter the first number: ");
         int num1 = scan.nextInt();
-        System.out.print("Digite o segundo número: ");
+        System.out.print("Enter the second number: ");
         int num2 = scan.nextInt();
-        System.out.print("Digite o terceiro número: ");
+        System.out.print("Enter the third number: ");
         float num3 = scan.nextFloat();
 
         int num4 = 3;
-        double resultado1 = (num1 * 2) + (num2 % 2);
-        double resultado2 = (num1 * 3) + num3;
-        double resultado3 = Math.pow(num3, num4);
+        double result1 = (num1 * 2) + (num2 % 2);
+        double result2 = (num1 * 3) + num3;
+        double result3 = Math.pow(num3, num4);
 
-        // Resultados
-        System.out.println("O produto do dobro do primeiro com a metade do segundo é: " + resultado1);
-        System.out.println("A soma do triplo do primeiro com o terceiro é: " + resultado2);
-        System.out.println("O terceiro elevado ao cubo é: " + resultado3);
-
-
-
+        // Results
+        System.out.println("The product of the double of the first with the half of the second is: " + result1);
+        System.out.println("The sum of the triple of the first with the third is: " + result2);
+        System.out.println("The third number raised to the power of 3 is: " + result3);
     }
 }

@@ -1,22 +1,20 @@
 package Curso_Java.src.com.italo.exercicios.Iniciais;
 
 import java.util.Scanner;
-
 /***
- * Faça um programa que calcule a área de um quadrado, em seguida mostre o dobro dessa área.
+
+ Make a program that calculates the area of a square, then shows double that area.
  */
 public class Exercicio6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite a área do quadrado: ");
-        double lado = scan.nextDouble();
+        System.out.print("Enter the square side length: ");
+        double side = scan.nextDouble();
 
-        double area = Math.pow(lado, 2);
+        double area = Math.pow(side, 2);
 
-        System.out.println("A área do quadrado é: " + area);
-        System.out.println("O dobro da área do quadrado é: " + (area * 2));
-
-
+        System.out.println("The area of the square is: " + area);
+        System.out.println("Twice the area of the square is: " + (area * 2));
     }
 }

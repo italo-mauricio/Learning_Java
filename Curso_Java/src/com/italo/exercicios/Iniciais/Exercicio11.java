@@ -6,51 +6,51 @@ public class Exercicio11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String generoM = "Você é homem";
-        String generoF = "Você é mulher";
-        System.out.print("Digite sua altura: ");
-        float altura = scan.nextFloat();
-        System.out.print("Digite seu sexo [M/F]: ");
-        String sexo = scan.next();
-        System.out.print("Digite o seu peso: ");
-        int peso = scan.nextInt();
-        double resultado = calculadoraImc(peso, altura);
+        String genderM = "You are a man";
+        String genderF = "You are a woman";
+        System.out.print("Enter your height: ");
+        float height = scan.nextFloat();
+        System.out.print("Enter your gender [M/F]: ");
+        String gender = scan.next();
+        System.out.print("Enter your weight: ");
+        int weight = scan.nextInt();
+        double result = calculadoraImc(weight, height);
 
-        if (sexo.equals("M") && resultado < 18.5) {
-            System.out.println(generoM);
-            System.out.println("Abaixo do peso ideal, seu imc é de : " + resultado);
-        } else if (sexo.equals("M") && resultado <= 24.9) {
-            System.out.println(generoM);
-            System.out.println("Seu peso esta ideal, seu imc é de: " + resultado);
-        } else if (sexo.equals("M") && resultado <= 29.9) {
-            System.out.println(generoM);
-            System.out.println("Seu peso esta um pouco acima da média, seu imc é de: " + resultado);
-        } else if (sexo.equals("M") && resultado <= 39.9) {
-            System.out.println(generoM);
-            System.out.println("Seu peso esta bem acima da média, seu imc é de: " + resultado);
-        } else if (sexo.equals("M") && resultado > 40) {
-            System.out.println(generoM);
-            System.out.println("Você está obeso, procure um médico, seu imc é de: " + resultado);
+        if (gender.equals("M") && result < 18.5) {
+            System.out.println(genderM);
+            System.out.println("Below ideal weight, your bmi is: " + result);
+        } else if (gender.equals("M") && result <= 24.9) {
+            System.out.println(genderM);
+            System.out.println("Your weight is ideal, your bmi is: " + result);
+        } else if (gender.equals("M") && result <= 29.9) {
+            System.out.println(genderM);
+            System.out.println("Your weight is slightly above average, your bmi is: " + result);
+        } else if (gender.equals("M") && result <= 39.9) {
+            System.out.println(genderM);
+            System.out.println("Your weight is well above average, your bmi is: " + result);
+        } else if (gender.equals("M") && result > 40) {
+            System.out.println(genderM);
+            System.out.println("You are obese, seek a doctor, your bmi is: " + result);
         }
-        if (sexo.equals("F") && resultado < 18.5) {
-            System.out.println(generoF);
-            System.out.println("Abaixo do peso ideal, seu imc é de: " + resultado);
-        } else if (sexo.equals("F") && resultado <= 24.9) {
-            System.out.println(generoF);
-            System.out.println("Seu peso esta ideal, seu imc é de: " + resultado);
-        } else if (sexo.equals("F") && resultado <= 29.9) {
-            System.out.println(generoF);
-            System.out.println("Seu peso está um pouco acima da média, seu imc é de: " + resultado);
-        } else if (sexo.equals("F") && resultado <= 39.9) {
-            System.out.println(generoF);
-            System.out.println("Seu peso está bem acima da média, seu imc é de: " + resultado);
-        } else if (sexo.equals("F") && resultado > 40) {
-            System.out.println(generoF);
-            System.out.println("Você está obesa, procure um médico, seu imc é de: " + resultado);
+        if (gender.equals("F") && result < 18.5) {
+            System.out.println(genderF);
+            System.out.println("Below ideal weight, your bmi is: " + result);
+        } else if (gender.equals("F") && result <= 24.9) {
+            System.out.println(genderF);
+            System.out.println("Your weight is ideal, your bmi is: " + result);
+        } else if (gender.equals("F") && result <= 29.9) {
+            System.out.println(genderF);
+            System.out.println("Your weight is slightly above average, your bmi is: " + result);
+        } else if (gender.equals("F") && result <= 39.9) {
+            System.out.println(genderF);
+            System.out.println("Your weight is well above average, your bmi is: " + result);
+        } else if (gender.equals("F") && result > 40) {
+            System.out.println(genderF);
+            System.out.println("You are obese, seek a doctor, your bmi is: " + result);
         }
 
     }
-    static float calculadoraImc(float peso, float altura){
-        return peso/(altura * altura);
+    static float calculadoraImc(float weight, float height){
+        return weight/(height * height);
     }
 }
