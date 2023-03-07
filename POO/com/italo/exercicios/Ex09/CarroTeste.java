@@ -7,6 +7,7 @@ public class CarroTeste {
     double capCombustivel;
     double consumoCombustivel;
 
+
     public CarroTeste(String marca, String modelo, int numPassageiros){
         this.marca = marca;
         this.modelo = modelo;
