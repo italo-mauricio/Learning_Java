@@ -43,9 +43,5 @@ public class AppOnibus {
         } else {
             System.out.println("Veículo não liberado, capacidade baixa de combustível.");
         }
-
-
-
-
     }
 }
