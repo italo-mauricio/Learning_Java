@@ -2,6 +2,9 @@ package POO.com.italo.exercicios.Ex10;
 
 import java.util.Scanner;
 
+
+// aula sobre Getters and Setters
+
 public class AppOnibus {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -17,6 +20,9 @@ public class AppOnibus {
         guanabara.setCapCombustivel(scan.nextDouble());
         System.out.print("Quantas poltronas normais o viculo possui: ");
         guanabara.setNumPoltronas(scan.nextInt());
+
+        // set para atribuir valor
+        // get para obter o valor
 
         if(guanabara.getNumPassageiros() >= 50 && guanabara.getBancoReclinaveis() < 10 && guanabara.getCapCombustivel() >= 200){
             System.out.println(" =========================================== ");
