@@ -12,7 +12,9 @@ public class Lampada2 {
     private boolean ligado;
 
     public Lampada2(String modelo, String tensao, int potencia, String corLuz,
-                    String cor, int garantiaMeses, String[] tipos, boolean tipoAbajur, boolean ligado) {
+                    String cor, int garantiaMeses, String[] tipos,
+                    boolean tipoAbajur, boolean ligado) {
+
         this.modelo = modelo;
         this.tensao = tensao;
         this.potencia = potencia;
@@ -23,6 +25,7 @@ public class Lampada2 {
         this.tipoAbajur = tipoAbajur;
         this.ligado = ligado;
     }
+
 
     public String getModelo() {
         return modelo;
@@ -96,6 +99,28 @@ public class Lampada2 {
         this.ligado = ligado;
     }
 
+    public void ligar(){
+        setLigado(true);
+    }
 
+    public void desligar(){
+        setLigado(false);
+    }
+
+    public void mostrarEstado(){
+        if(isLigado()){
+            System.out.println("A lâmpada está Ligada");
+        }else{
+            System.out.println("A lâmpada está desligada");
+        }
+    }
+
+    public void mudarEstado(){
+        if(isLigado()){
+            desligar();
+        }else{
+            ligar();
+        }
+    }
 
 }
