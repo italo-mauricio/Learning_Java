@@ -11,6 +11,19 @@ public class Lampada2 {
     private boolean tipoAbajur;
     private boolean ligado;
 
+    public Lampada2(String modelo, String tensao, int potencia, String corLuz,
+                    String cor, int garantiaMeses, String[] tipos, boolean tipoAbajur, boolean ligado) {
+        this.modelo = modelo;
+        this.tensao = tensao;
+        this.potencia = potencia;
+        this.corLuz = corLuz;
+        this.cor = cor;
+        this.garantiaMeses = garantiaMeses;
+        this.tipos = tipos;
+        this.tipoAbajur = tipoAbajur;
+        this.ligado = ligado;
+    }
+
     public String getModelo() {
         return modelo;
     }
