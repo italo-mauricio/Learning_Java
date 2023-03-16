@@ -26,7 +26,8 @@ public class AppBanco {
 
 
     public static void main(String[] args) {
-        ContaBanco conta = new ContaBanco();
+        ContaBanco conta = new ContaBanco("123", "155", "555",
+                true, 1500, 25000, true, 500, senhaNova());
 
         Scanner scan = new Scanner(System.in);
         String situacaoEmprestimo;
@@ -34,14 +35,6 @@ public class AppBanco {
         boolean aproved = false;
 
         logo();
-        conta.setNumConta("123");
-        conta.setSenha(senhaNova());
-        conta.setValorEspecialUsado(conta.getValorEspecialUsado());
-        conta.setLimiteEspecial(1500);
-        conta.isEmprestimoAtivo();
-        conta.setCvv(": 555");
-        conta.setSaldo(1500);
-        conta.setAgencia("188");
 
 
         if (conta.isEmprestimoAtivo()) {

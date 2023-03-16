@@ -12,7 +12,9 @@ public class ContaBanco {
    private double valorEspecialUsado;
    private String senha;
 
-    public ContaBanco() {
+    public ContaBanco(String numConta, String agencia, String cvv, boolean especial,
+                      double limiteEspecial, double saldo, boolean emprestimoAtivo, double valorEspecialUsado,
+                      String senha) {
         this.numConta = numConta;
         this.agencia = agencia;
         this.cvv = cvv;
@@ -23,7 +25,6 @@ public class ContaBanco {
         this.valorEspecialUsado = valorEspecialUsado;
         this.senha = senha;
     }
-
 
 
     public String getNumConta() {
