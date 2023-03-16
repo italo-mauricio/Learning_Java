@@ -12,8 +12,7 @@ public class ContaBanco {
    private double valorEspecialUsado;
    private String senha;
 
-    public ContaBanco(String numConta, String agencia, String cvv, boolean especial, double limiteEspecial,
-                      double saldo, boolean emprestimoAtivo, double valorEspecialUsado, String senha) {
+    public ContaBanco() {
         this.numConta = numConta;
         this.agencia = agencia;
         this.cvv = cvv;
@@ -24,6 +23,8 @@ public class ContaBanco {
         this.valorEspecialUsado = valorEspecialUsado;
         this.senha = senha;
     }
+
+
 
     public String getNumConta() {
         return numConta;
@@ -117,6 +118,33 @@ public class ContaBanco {
                 return false;   // não é conta espcial, não tem saldo suficiente
             }
         }
+    }
+    public void depositar (double valorDepositado){
+        saldo += valorDepositado;
+    }
+
+    public void consultarSaldo(){
+        System.out.println("Saldo da conta: " + saldo);
+    }
+
+    public void consultarLimiteEspecial(){
+        System.out.println("Limite especial: " + getLimiteEspecial());
+    }
+
+    public void consultarCvv(){
+        System.out.println("CVV" + cvv);
+    }
+
+    public void consultarAgencia(){
+        System.out.println("Agência: " + getAgencia());
+    }
+
+    public void consultarNumConta(){
+        System.out.println("Número da conta: " + numConta);
+    }
+
+    public boolean verificarUsoChequeEspecial(){
+        return saldo < 0;
     }
 
 }
