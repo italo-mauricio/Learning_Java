@@ -1,7 +1,7 @@
 package POO.com.italo.exercicios.Ex07;
 
 import Curso_Java.src.com.italo.exercicios.Arrays.Exercicio2;
-import POO.com.italo.aulas.PrincipalCarro;
+import POO.com.italo.aulas.Carro.PrincipalCarro;
 
 
 /**

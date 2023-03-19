@@ -1,4 +1,4 @@
-package POO.com.italo.aulas;
+package POO.com.italo.aulas.Carro;
 
 public class TesteCarro {
     public static void main(String[] args) {
