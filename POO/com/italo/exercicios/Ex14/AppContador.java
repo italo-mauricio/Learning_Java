@@ -16,5 +16,13 @@ public class AppContador {
         imprimirValor();
         Contador.zerar();
         imprimirValor();
+
+
+        //podemos intanciar criando um construtor de adição ao contador
+        Contador cont = new Contador();
+        Contador cont2 = new Contador();
+        Contador cont3 = new Contador();
+
+        imprimirValor();
     }
 }

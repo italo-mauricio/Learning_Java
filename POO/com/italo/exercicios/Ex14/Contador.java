@@ -4,6 +4,10 @@ public class Contador {
 
     private static int cont;
 
+    public Contador(){
+        cont++;
+    }
+
     public static void incrementar(){
         cont++;
     }
