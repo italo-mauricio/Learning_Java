@@ -1,5 +1,8 @@
 package POO.com.italo.exercicios.Ex16;
 
+
+// programa básico de fatorial em java
+
 public class Fatorial {
     public static int fatorial(int num){
         if(num == 0){
