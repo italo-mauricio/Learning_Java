@@ -4,14 +4,16 @@ import java.util.Scanner;
 
 public class AppFibonacci {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("Digite um número: ");
+        System.out.print("Digite um número: ");
         int num = scan.nextInt();
-        for (int i = 0; i < num; i++) {
-            System.out.println(Fibonacci.fibonacci(i) + " ");
+        if(num < 0){
+            System.out.println("Número inválido");
+        }else{
+            for (int i = 0; i < num; i++) {
+                System.out.print(" | " + Fibonacci.fibonacci(i) + " | ");
+            }
         }
-
-
     }
 }
