@@ -20,6 +20,6 @@ public class AppFatorial {
             }
         }while(num < 0);
 
-        System.out.println("O fatorial de: "+ num + "\né: " + Fatorial.fatorial(num));
+        System.out.println("O fatorial de: "+ num + "\né: " + Fatorial.fatorialRecursivo(num));
     }
 }
