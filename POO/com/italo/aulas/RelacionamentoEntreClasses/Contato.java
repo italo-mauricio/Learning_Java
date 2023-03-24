@@ -2,7 +2,7 @@ package POO.com.italo.aulas.RelacionamentoEntreClasses;
 
 public class Contato {
     private String nome;
-    private String endereco;
+    private Endereco endereco;
     private String telefone;
 
     public String getNome() {
@@ -13,11 +13,11 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
 
