@@ -3,7 +3,7 @@ package POO.com.italo.aulas.RelacionamentoEntreClasses;
 public class Contato {
     private String nome;
     private Endereco endereco;
-    private String telefone;
+    private Telefone telefone;
 
     public String getNome() {
         return nome;
@@ -21,11 +21,11 @@ public class Contato {
         this.endereco = endereco;
     }
 
-    public String getTelefone() {
+    public Telefone getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
+    public void setTelefone(Telefone telefone) {
         this.telefone = telefone;
     }
 }
