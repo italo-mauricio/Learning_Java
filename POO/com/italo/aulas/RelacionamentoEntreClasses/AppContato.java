@@ -1,7 +1,6 @@
 package POO.com.italo.aulas.RelacionamentoEntreClasses;
 
 
-
 public class AppContato {
     public static void main(String[] args) {
         Contato contato = new Contato();
@@ -58,13 +57,5 @@ public class AppContato {
                 System.out.println(t.getDdd() + " " + t.getNumero());
             }
         }
-
-
-
-
-
-
-
-
     }
 }
