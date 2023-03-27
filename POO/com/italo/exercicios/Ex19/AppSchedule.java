@@ -16,9 +16,15 @@ public class AppSchedule {
             System.out.println("Type contact informations: " + (i+1));
             Contact c = new Contact();
 
+            System.out.println("Enter your name: ");
             String name = scan.nextLine();
-            String phone = scan.nextLine();
+            c.setName(name);
+            System.out.println("Enter your age: ");
+            String age = scan.nextLine();
+            c.setAge(age);
+            System.out.println("Enter your email: ");
             String email = scan.nextLine();
+            c.setEmail(email);
 
         }
     }
