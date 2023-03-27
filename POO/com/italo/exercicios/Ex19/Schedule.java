@@ -37,4 +37,15 @@ public class Schedule {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String info(){
+        String information = "Name Diary: " + name + "\n";
+
+        if (contacts != null){
+            for(Contact c : contacts){
+                information += c.obterInfo() + "zn";
+            }
+        }
+        return information;
+    }
 }

@@ -12,9 +12,12 @@ public class AppSchedule {
         String schuuName = scan.nextLine();
 
         Contact[] contacts = new Contact[3];
+
+
         for(int i = 0; i < 3; i++){
             System.out.println("Type contact informations: " + (i+1));
             Contact c = new Contact();
+            Phone phone = new Phone();
 
             System.out.println("Enter your name: ");
             String name = scan.nextLine();
@@ -26,6 +29,12 @@ public class AppSchedule {
             String email = scan.nextLine();
             c.setEmail(email);
 
+
+            contacts[i] = c;
+        }
+        schedule.setContacts(contacts);
+        if(schedule != null) {
+            System.out.println(schedule.info());
         }
     }
 }

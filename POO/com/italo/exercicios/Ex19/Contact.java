@@ -5,6 +5,16 @@ public class Contact {
     private String email;
     private String age;
 
+    private Phone phone;
+
+    public Phone getPhone() {
+        return phone;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
+    }
+
     public String getName() {
         return name;
     }
@@ -27,5 +37,12 @@ public class Contact {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public String obterInfo(){
+        return "Name: " + name + ";" +
+                "Phone: " + phone + ";" +
+                "Email: " + email + ";" +
+                "Age: " + age + ";";
     }
 }
