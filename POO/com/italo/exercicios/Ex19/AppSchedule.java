@@ -10,5 +10,16 @@ public class AppSchedule {
 
         System.out.println("Type your schedule name: ");
         String schuuName = scan.nextLine();
+
+        Contact[] contacts = new Contact[3];
+        for(int i = 0; i < 3; i++){
+            System.out.println("Type contact informations: " + (i+1));
+            Contact c = new Contact();
+
+            String name = scan.nextLine();
+            String phone = scan.nextLine();
+            String email = scan.nextLine();
+
+        }
     }
 }
