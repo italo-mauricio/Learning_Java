@@ -4,14 +4,13 @@ public class Contact {
     private String name;
     private String email;
     private String age;
+    private String phone;
 
-    private Phone phone;
-
-    public Phone getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Phone phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -39,10 +38,5 @@ public class Contact {
         this.age = age;
     }
 
-    public String obterInfo(){
-        return "Name: " + name + ";" +
-                "Phone: " + phone + ";" +
-                "Email: " + email + ";" +
-                "Age: " + age + ";";
-    }
+
 }
