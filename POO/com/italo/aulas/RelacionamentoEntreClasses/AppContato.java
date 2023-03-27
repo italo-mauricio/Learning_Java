@@ -1,10 +1,9 @@
 package POO.com.italo.aulas.RelacionamentoEntreClasses;
 
-import java.util.Scanner;
+
 
 public class AppContato {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
         Contato contato = new Contato();
 
         contato.setNome("Italo");
@@ -19,7 +18,8 @@ public class AppContato {
         end.setComplemento("Rua de tal");
         end.setNumero("7");
         end.setEstado("RN");
-        contato.setEndereco(end); // aqui precisamos setar o objeto
+        contato.setEndereco(end);
+        // aqui precisamos setar o objeto
         if(contato != null && contato.getEndereco() != null){
             System.out.println(contato.getEndereco().getCidade());
             System.out.println(contato.getEndereco().getCep());
@@ -28,20 +28,39 @@ public class AppContato {
             System.out.println(contato.getEndereco().getNomeRua());
         }
 
-        // criar o objeto para telefone
+        // cria o objeto para telefone 1
 
         Telefone tel = new Telefone();
         tel.setDdd("081");
         tel.setTipo("Celular");
-        tel.setNumero("832344232324");
+        tel.setNumero("8323-8899");
 
-        contato.setTelefone(tel);
-        if(contato != null && contato.getTelefone() != null){
-            System.out.println(contato.getTelefone().getDdd());
-            System.out.println(contato.getTelefone().getNumero());
-            System.out.println(contato.getTelefone().getTipo());
+        // cria o objeto para o telefone 2
 
+        Telefone tel2 = new Telefone();
+        tel2.setDdd("081");
+        tel2.setTipo("Celular");
+        tel2.setNumero("8899-9888");
+
+        // instancia o array para os dois objetos criados anteriormente
+
+        Telefone[] telefones = new Telefone[2];
+        telefones[0] = tel2;
+        telefones[1] = tel;
+
+        // seta o array
+        contato.setTelefones(telefones);
+
+        // verifica se tanto a classe conato, quanto os telefones são null
+
+        if(contato != null && contato.getTelefones() != null){
+            for(Telefone t : contato.getTelefones()){
+                System.out.println(t.getDdd() + " " + t.getNumero());
+            }
         }
+
+
+
 
 
 
