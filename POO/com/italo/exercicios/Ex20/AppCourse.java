@@ -25,5 +25,32 @@ public class AppCourse {
         teacher.setNameTeacher(nameTeacher);
         teacher.setEmail(depEmail);
         teacher.setDepartment(depDepartment);
+
+        course.setTeacher(teacher);
+
+        System.out.println("     Students     ");
+
+        Student[] students = new Student[5];
+        for (int i=0; i < 5; i++){
+            System.out.println("Enter student's name: " + (i + 1));
+            String nameStudent = scan.nextLine();
+            System.out.println("Enter student's registration: ");
+            String regStudent = scan.nextLine();
+
+            double[] notes = new double[4];
+
+            for(int j=0; j < 4; j++){
+                System.out.println("Enter the note: " + (j + 1));
+                notes[j] = scan.nextDouble();
+            }
+            Student student = new Student();
+            student.setNameStudent(nameStudent);
+            student.setRegistration(regStudent);
+
+        }
+
+
+
+
     }
 }
