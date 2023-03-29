@@ -7,17 +7,15 @@ public class AppSchedule {
         Scanner scan = new Scanner(System.in);
         Schedule schedule = new Schedule();
         System.out.println("Type your schedule name: ");
-        String schuuName = scan.nextLine();
+        schedule.setNameDiary(scan.nextLine());
 
         Contact[] contacts = new Contact[2];
-        Phone[] phone = new Phone[2];
-        Address add = new Address();
 
 
         for(int i = 0; i < 2; i++){
             System.out.println("Type contact informations: " + (i+1));
             Contact c = new Contact();
-            Phone p = new Phone();
+
 
             System.out.println("Enter your name: ");
             String name = scan.nextLine();
@@ -29,27 +27,28 @@ public class AppSchedule {
             String email = scan.nextLine();
             c.setEmail(email);
             System.out.println("Enter your phone ");
-            p.setNumeberPhone(scan.nextLine());
+            String phone = scan.nextLine();
+            c.setPhone(phone);
             System.out.println("Enter your street: ");
-            add.setNameStreet(scan.nextLine());
+            String street = scan.nextLine();
+            c.setNameStreet(street);
             System.out.println("Enter your city name: ");
-            add.setCity(scan.nextLine());
+            String city = scan.nextLine();
+            c.setCity(city);
             System.out.println("Enter your statement: ");
-            add.setState(scan.nextLine());
+            c.setState(scan.nextLine());
             System.out.println("Enter your CEP: ");
-            add.setCep(scan.nextLine());
+            c.setCep(scan.nextLine());
             System.out.println("Enter your street number: ");
-            add.setNumberStreet(scan.nextLine());
+            c.setNumberStreet(scan.nextLine());
 
 
             contacts[i] = c;
-            phone[i] = p;
 
         }
         schedule.setContacts(contacts);
         if(schedule != null) {
-            System.out.println("Name Diary: " + schuuName);
-            System.out.println("Phone: " + phone[1].getNumeberPhone());
+            System.out.println(schedule.obterInfo());
         }
     }
 }

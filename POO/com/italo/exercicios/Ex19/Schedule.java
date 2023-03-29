@@ -1,18 +1,8 @@
 package POO.com.italo.exercicios.Ex19;
 
 public class Schedule {
-    private String name;
+    private String nameDiary;
     private Contact[] contacts;
-    private Address addres;
-
-
-    public Address getAddres() {
-        return addres;
-    }
-
-    public void setAddres(Address addres) {
-        this.addres = addres;
-    }
 
     public Contact[] getContacts() {
         return contacts;
@@ -22,14 +12,23 @@ public class Schedule {
         this.contacts = contacts;
     }
 
-    public String getName() {
-        return name;
+    public String getNameDiary() {
+        return nameDiary;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameDiary(String nameDiary) {
+        this.nameDiary = nameDiary;
     }
 
+    public String obterInfo(){
+        String info = "Nome = " + nameDiary + "\n";
 
 
+        if(contacts != null){
+            for (Contact c : contacts){
+                info += c.obterInfo() + "\n";
+            }
+        }
+        return info;
+    }
 }
