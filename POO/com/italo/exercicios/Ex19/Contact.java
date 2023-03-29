@@ -85,9 +85,16 @@ public class Contact {
 
     public String obterInfo(){
         return "Name = " + name + "\n" +
+                "\n" +
                 "Phone = " + phone + "\n" +
                 "Email = " + email + "\n" +
-                "Age = " + age + "\n";
+                "Age = " + age + "\n" +
+                "City: " + city + "\n" +
+                "Street: " + nameStreet + "\n" +
+                "Statement: " + state + "\n" +
+                "Number Street: " + numberStreet + "\n" +
+                "CEP: " + cep + "\n";
+
     }
 
 

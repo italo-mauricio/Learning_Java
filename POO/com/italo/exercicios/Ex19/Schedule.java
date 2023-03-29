@@ -21,7 +21,7 @@ public class Schedule {
     }
 
     public String obterInfo(){
-        String info = "Nome = " + nameDiary + "\n";
+        String info = "Name Diary = " + nameDiary + "\n";
 
 
         if(contacts != null){
