@@ -46,11 +46,9 @@ public class AppCourse {
             Student student = new Student();
             student.setNameStudent(nameStudent);
             student.setRegistration(regStudent);
-
+            student.setNote(notes);
         }
 
-
-
-
+        course.setStudents(students);
     }
 }

@@ -28,4 +28,8 @@ public class Teacher {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    public String getInfo(){
+        return "Teacher = " + nameTeacher;
+    }
 }

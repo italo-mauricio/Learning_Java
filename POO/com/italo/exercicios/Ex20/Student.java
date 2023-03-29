@@ -28,4 +28,15 @@ public class Student {
     public void setNote(double[] note) {
         this.note = note;
     }
+
+    public String getInfo(){
+        String info = "Student Name = " + nameStudent + "; ";
+        info += "Registration = " + registration + "; ";
+        info += "Notes: ";
+        for (double notes : note){
+            info += notes + " ";
+        }
+        return info;
+    }
+
 }
