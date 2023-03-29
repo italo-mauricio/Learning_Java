@@ -2,7 +2,7 @@ package POO.com.italo.exercicios.Ex20;
 
 public class Course {
     private String nameCourse;
-    private String hour;
+    private String time;
     private Teacher teacher;
     private Student[] students;
 
@@ -14,12 +14,12 @@ public class Course {
         this.nameCourse = nameCourse;
     }
 
-    public String getHour() {
-        return hour;
+    public String getTime() {
+        return time;
     }
 
-    public void setHour(String hour) {
-        this.hour = hour;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public Teacher getTeacher() {
