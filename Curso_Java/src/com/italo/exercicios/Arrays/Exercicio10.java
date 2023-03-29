@@ -7,6 +7,7 @@ import java.util.Scanner;
  *  * é a divisão dos respectivos elementos em A e B, ou seja:
  *  * C[i] = A[i] / B[i];
  */
+
 public class Exercicio10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -18,12 +19,12 @@ public class Exercicio10 {
 
 
         for (int i = 0; i < vetorA.length; i++){
-            System.out.println("Digite o valor do vetor A da posição: " + i);
+            System.out.println("Digite o valor do vetor A da posição específica: " + i);
             vetorA[i] = scan.nextInt();
 
         }
         for (int i = 0; i < vetorB.length; i++){
-            System.out.println("Digite o valor do vetor B da posição: " + i);
+            System.out.println("Digite o valor do vetor B da posição específica: " + i);
             vetorB[i] = scan.nextInt();
         }
 
