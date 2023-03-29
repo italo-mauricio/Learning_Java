@@ -37,4 +37,18 @@ public class Course {
     public void setStudents(Student[] students) {
         this.students = students;
     }
+
+    public String getInfo(){
+        String info = "Course Name" + nameCourse + "\n";
+        if (teacher != null){
+            info += teacher.getInfo();
+        }
+        if (teacher != null){
+            System.out.println("    Students    ");
+            for(Student student : students){
+                info += student.getInfo();
+            }
+        }
+        return info;
+    }
 }

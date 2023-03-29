@@ -30,11 +30,27 @@ public class Student {
     }
 
     public String getInfo(){
+
         String info = "Student Name = " + nameStudent + "; ";
         info += "Registration = " + registration + "; ";
         info += "Notes: ";
+
+        double sum = 0;
         for (double notes : note){
+            sum += notes;
             info += notes + " ";
+        }
+        double average = sum/4;
+        info += "\n" + "Average: " + average + " - ";
+
+        if(average <= 7){
+            info += "Approved!";
+        }else if (average <= 5){
+            info += "Disapproved!";
+        }else if (average <= 3){
+            info += "Recovery";
+        }else{
+            System.out.println("Invalid!");
         }
         return info;
     }
