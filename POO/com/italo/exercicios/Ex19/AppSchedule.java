@@ -13,7 +13,7 @@ public class AppSchedule {
 
 
         for(int i = 0; i < 2; i++){
-            System.out.println("Type contact informations: " + (i+1));
+            System.out.println("Enter contact informations: " + (i+1));
             Contact c = new Contact();
 
 
