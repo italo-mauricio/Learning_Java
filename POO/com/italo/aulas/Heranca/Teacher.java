@@ -55,4 +55,8 @@ public class Teacher {
     public void setNameCourse(String nameCourse) {
         this.nameCourse = nameCourse;
     }
+
+    public double calculateLiquidSalary(){
+        return 0;
+    }
 }

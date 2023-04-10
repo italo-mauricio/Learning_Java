@@ -55,4 +55,12 @@ public class Student {
     public void setNotes(double[] notes) {
         this.notes = notes;
     }
+
+    public double calculateAverage(){
+        return 0;
+    }
+
+    public boolean chekAproved(){
+        return true;
+    }
 }
