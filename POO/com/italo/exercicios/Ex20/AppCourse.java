@@ -32,6 +32,7 @@ public class AppCourse {
 
         Student[] students = new Student[5];
         for (int i=0; i < 5; i++){
+            scan.nextLine();
             System.out.println("Enter student's name: " + (i + 1));
             String nameStudent = scan.nextLine();
             System.out.println("Enter student's registration: ");
@@ -47,8 +48,11 @@ public class AppCourse {
             student.setNameStudent(nameStudent);
             student.setRegistration(regStudent);
             student.setNote(notes);
+            students[i] = student;
         }
 
         course.setStudents(students);
+        System.out.println(course.obterInfo());
+
     }
 }

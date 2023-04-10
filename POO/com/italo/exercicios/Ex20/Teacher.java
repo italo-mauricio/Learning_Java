@@ -29,7 +29,7 @@ public class Teacher {
         this.department = department;
     }
 
-    public String getInfo(){
+    public String obterInfo(){
         return "Teacher = " + nameTeacher;
     }
 }

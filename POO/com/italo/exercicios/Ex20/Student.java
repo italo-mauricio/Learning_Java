@@ -29,16 +29,16 @@ public class Student {
         this.note = note;
     }
 
-    public String getInfo(){
+    public String obterInfo(){
 
-        String info = "Student Name = " + nameStudent + "; ";
-        info += "Registration = " + registration + "; ";
-        info += "Notes: ";
+        String info = "\nStudent Name: " + nameStudent + "; ";
+        info += "\nRegistration: " + registration + "; ";
+        info += "\nNotes: ";
 
         double sum = 0;
         for (double notes : note){
             sum += notes;
-            info += notes + " ";
+            info += notes + " | ";
         }
         double average = sum/4;
         info += "\n" + "Average: " + average + " - ";
@@ -49,10 +49,16 @@ public class Student {
             info += "Disapproved!";
         }else if (average <= 3){
             info += "Recovery";
-        }else{
-            System.out.println("Invalid!");
         }
         return info;
+    }
+
+    public double obterMedia(){
+        double soma = 0;
+        for (double nota : note){
+            soma += nota;
+        }
+        return soma / 4;
     }
 
 }

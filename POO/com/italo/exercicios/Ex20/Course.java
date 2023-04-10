@@ -38,17 +38,29 @@ public class Course {
         this.students = students;
     }
 
-    public String getInfo(){
-        String info = "Course Name" + nameCourse + "\n";
+    public String obterInfo(){
+        String info = "Course Name: " + nameCourse + "\n";
         if (teacher != null){
-            info += teacher.getInfo();
+            info += teacher.obterInfo();
         }
         if (teacher != null){
             System.out.println("    Students    ");
             for(Student student : students){
-                info += student.getInfo();
+                if(student != null) {
+                    info += student.obterInfo();
+                }
             }
+            info += "\nMédia da turma = " + obterMediaTurma();
         }
         return info;
+    }
+    public double obterMediaTurma(){
+        double soma = 0;
+        for(Student student : students){
+            if (student != null) {
+                soma += student.obterMedia();
+            }
+        }
+        return soma / students.length;
     }
 }
