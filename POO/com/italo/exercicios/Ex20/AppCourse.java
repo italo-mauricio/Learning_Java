@@ -32,6 +32,7 @@ public class AppCourse {
 
         Student[] students = new Student[5];
         for (int i=0; i < 5; i++){
+
             scan.nextLine();
             System.out.println("Enter student's name: " + (i + 1));
             String nameStudent = scan.nextLine();

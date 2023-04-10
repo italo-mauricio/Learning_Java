@@ -43,12 +43,12 @@ public class Student {
         double average = sum/4;
         info += "\n" + "Average: " + average + " - ";
 
-        if(average <= 7){
+        if(average >= 7){
             info += "Approved!";
-        }else if (average <= 5){
-            info += "Disapproved!";
-        }else if (average <= 3){
-            info += "Recovery";
+        }else if (average >= 5){
+            info += "Recovery!";
+        }else if (average < 3){
+            info += "Disaproved!";
         }
         return info;
     }
