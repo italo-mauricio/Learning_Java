@@ -37,4 +37,9 @@ public class Student extends People {
     public boolean chekAproved(){
         return true;
     }
+
+    public void testingMethod(){
+        super.setCpf("21321321312");
+        this.setCpf("23123123123");
+    }
 }
