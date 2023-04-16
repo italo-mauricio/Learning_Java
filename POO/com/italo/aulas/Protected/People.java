@@ -6,7 +6,7 @@ public class People {
     private String phone;
     private String cpf;
     private String privateNumber;
-    public String nomeVisibilidade;
+    protected String nomeVisibilidade;
     public People(){
     }
     public People(String name, String address, String phone) {

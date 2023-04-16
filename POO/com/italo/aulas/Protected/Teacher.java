@@ -5,7 +5,10 @@ public class Teacher extends People {
     private double salary;
     private String nameCourse;
 
-
+    public void verifyAcess(){
+        this.nomeVisibilidade = "sadasd";
+        super.nomeVisibilidade = "dasdasdas";
+    }
     public double getSalary() {
         return salary;
     }
