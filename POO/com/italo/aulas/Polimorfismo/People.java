@@ -55,4 +55,8 @@ public class People {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public String getAddressLabel(){
+        return address;
+    }
 }
