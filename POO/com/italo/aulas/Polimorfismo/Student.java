@@ -47,4 +47,9 @@ public class Student extends People {
         super.setCpf("21321321312");
         this.setCpf("23123123123");
     }
+    public String getAddressLabel(){
+        String s = "Student's Address: ";
+        s += this.getAddress();
+        return s;
+    }
 }

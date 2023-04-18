@@ -28,4 +28,10 @@ public class Teacher extends People {
     public double calculateLiquidSalary(){
         return 0;
     }
+
+    public String getAddressLabel(){
+        String s = "Teache's Address: ";
+        s += this.getAddress();
+        return s;
+    }
 }
