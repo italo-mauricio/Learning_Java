@@ -58,4 +58,9 @@ public class Student extends People {
         s += this.getName();
         return s;
     }
+    public String getCpfLabel(){
+        String s = "Student's CPF: ";
+        s += this.getCpf();
+        return s;
+    }
 }

@@ -40,5 +40,10 @@ public class Teacher extends People {
         s += this.getName();
         return s;
     }
+    public String getCpfLabel(){
+        String s = "Teacher's CPF: ";
+        s += this.getCpf();
+        return s;
+    }
 
 }

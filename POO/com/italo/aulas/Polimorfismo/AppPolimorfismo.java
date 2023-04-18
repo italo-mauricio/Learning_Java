@@ -25,10 +25,13 @@ public class AppPolimorfismo {
         teacher.setAddress(("Street Third, Number 3"));
 
         System.out.println(people.getNameLabel());
+        System.out.println(people.getCpfLabel());
         System.out.println(people.getAddressLabel());
         System.out.println(student.getNameLabel());
+        System.out.println(student.getCpfLabel());
         System.out.println(student.getAddressLabel());
         System.out.println(teacher.getNameLabel());
+        System.out.println(teacher.getCpfLabel());
         System.out.println(teacher.getAddressLabel());
     }
 }
