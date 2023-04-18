@@ -6,8 +6,8 @@ public class Teacher extends People {
     private String nameCourse;
 
     public void verifyAcess(){
-        this.nomeVisibilidade = "sadasd";
-        super.nomeVisibilidade = "dasdasdas";
+        this.nomeVisibilidade = "TESTE";
+        super.nomeVisibilidade = "TESTE";
     }
     public double getSalary() {
         return salary;
