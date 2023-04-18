@@ -30,8 +30,15 @@ public class Teacher extends People {
     }
 
     public String getAddressLabel(){
-        String s = "Teache's Address: ";
+        String s = "Teacher's Address: ";
         s += this.getAddress();
         return s;
     }
+
+    public String getNameLabel(){
+        String s = "Teacher's Name: ";
+        s += this.getName();
+        return s;
+    }
+
 }

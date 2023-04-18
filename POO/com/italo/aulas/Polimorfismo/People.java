@@ -59,4 +59,13 @@ public class People {
     public String getAddressLabel(){
         return address;
     }
+    public String getNameLabel(){
+        return name;
+    }
+    public String getCpfLabel(){
+        return cpf;
+    }
+    public String getNumberLabel(){
+        return phone;
+    }
 }

@@ -52,4 +52,10 @@ public class Student extends People {
         s += this.getAddress();
         return s;
     }
+
+    public String getNameLabel(){
+        String s = "Student's Name: ";
+        s += this.getName();
+        return s;
+    }
 }
