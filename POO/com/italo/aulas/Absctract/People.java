@@ -1,6 +1,6 @@
 package POO.com.italo.aulas.Absctract;
 
-public class People {
+public abstract class People {
     private String name;
     private String address;
     private String phone;
@@ -56,9 +56,11 @@ public class People {
         this.cpf = cpf;
     }
 
-    public String getAddressLabel(){
-        return address;
-    }
+    public abstract String getAddressLabel();
+
+    public abstract void displayAddressLabel();
+
+
     public String getNameLabel(){
         return name;
     }

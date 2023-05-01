@@ -53,6 +53,11 @@ public class Student extends People {
         return s;
     }
 
+    @Override
+    public void displayAddressLabel() {
+        System.out.println(this.getAddressLabel());
+    }
+
     public String getNameLabel(){
         String s = "Student's Name: ";
         s += this.getName();

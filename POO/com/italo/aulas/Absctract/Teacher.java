@@ -35,6 +35,12 @@ public class Teacher extends People {
         return s;
     }
 
+    @Override
+    public void displayAddressLabel() {
+        System.out.println("Display Addres's Teacher");
+        System.out.println(this.getAddressLabel());
+    }
+
     public String getNameLabel(){
         String s = "Teacher's Name: ";
         s += this.getName();
