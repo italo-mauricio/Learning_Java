@@ -5,7 +5,15 @@ public class People {
     private String email;
     private String address;
     private String age;
-    private String Cpf;
+    private String pass;
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
 
     public String getName() {
         return name;
@@ -39,11 +47,5 @@ public class People {
         this.age = age;
     }
 
-    public String getCpf() {
-        return Cpf;
-    }
 
-    public void setCpf(String cpf) {
-        Cpf = cpf;
-    }
 }
