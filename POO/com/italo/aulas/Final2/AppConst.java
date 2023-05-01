@@ -9,10 +9,8 @@ public class AppConst {
         Scanner scanner = new Scanner(System.in);
         People people = new People();
 
-
         String name = readName(scanner);
         people.setName(name);
-
 
         int age = readAge(scanner);
         people.setAge(String.valueOf(age));
@@ -42,7 +40,6 @@ public class AppConst {
         System.out.println("Follow Your Data");
         scanner.close();
     }
-
     private static String readName(Scanner scanner) {
         String name = "";
 
@@ -57,7 +54,6 @@ public class AppConst {
 
         return name;
     }
-
     private static int readAge(Scanner scanner) {
         int age = -1;
 
@@ -78,7 +74,6 @@ public class AppConst {
 
         return age;
     }
-
     private static String readEmail(Scanner scanner) {
         String email = "";
 
@@ -93,7 +88,6 @@ public class AppConst {
 
         return email;
     }
-
     private static String readPassword(Scanner scanner) {
         String password = "";
         boolean isValid = false;
@@ -122,11 +116,6 @@ public class AppConst {
         System.out.print("Input Your Address: ");
         address = scanner.nextLine();
         return address;
-    }
-
-    public static void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
     }
 }
 
