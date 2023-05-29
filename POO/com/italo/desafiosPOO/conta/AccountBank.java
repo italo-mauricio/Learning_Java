@@ -8,7 +8,10 @@ public class AccountBank {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "AccountBank! " + "\n" +
+                "ClientName = " + clientName + "\n" +
+                "AccountNumber = " + accountNumber + "\n" +
+                "Currency = " + currency + "\n";
     }
 
     public String getClientName() {
