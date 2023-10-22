@@ -4,14 +4,14 @@ public class TestBank {
     public static void main(String[] args) {
         System.out.println("*** Account Testing ***");
 
-        AccountBank accountSimple = new AccountBank();
-        accountSimple.setClientName("Client simple account");
-        accountSimple.setAccountNumber("12345");
-        accountSimple.deposit(100);
-        withdrawFunds(accountSimple, 50);
-        withdrawFunds(accountSimple, 70);
+        SavingsAccount savingsAccount  = new SavingsAccount();
+        savingsAccount.setClientName("Client Saving Account");
+        savingsAccount.setAccountNumber("12345");
+        savingsAccount.deposit(100);
+        withdrawFunds(savingsAccount, 50);
+        withdrawFunds(savingsAccount, 70);
 
-        System.out.println(accountSimple);
+        System.out.println(savingsAccount);
     }
     private static void withdrawFunds(AccountBank accountBank, double value){
         if (accountBank.withdraw(value)){
