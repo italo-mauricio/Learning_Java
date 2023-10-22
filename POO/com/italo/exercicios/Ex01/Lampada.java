@@ -1,5 +1,6 @@
 package POO.com.italo.exercicios.Ex01;
 
+
 public class Lampada {
     String modelo;
     String tensao;

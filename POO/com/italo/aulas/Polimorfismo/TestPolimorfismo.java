@@ -1,6 +1,6 @@
 package POO.com.italo.aulas.Polimorfismo;
 
-public class AppPolimorfismo {
+public class TestPolimorfismo {
     public static void main(String[] args) {
         People people = new People();
         People student = new Student();

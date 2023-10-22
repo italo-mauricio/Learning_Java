@@ -1,6 +1,6 @@
 package POO.com.italo.desafiosPOO.conta;
 
-public class AppBank {
+public class TestBank {
     public static void main(String[] args) {
         System.out.println("*** Account Testing ***");
 
